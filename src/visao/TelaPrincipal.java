@@ -5,7 +5,7 @@
  */
 package visao;
 
-import controle.ConexaoBD;
+
 
 /**
  *
