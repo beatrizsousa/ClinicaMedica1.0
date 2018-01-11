@@ -103,14 +103,14 @@ public class FormularioPaciente extends javax.swing.JFrame {
         jPanel1.add(jLabel5);
         jLabel5.setBounds(570, 30, 40, 17);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Masculino", "Feminino" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione", "Masculino", "Feminino" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
             }
         });
         jPanel1.add(jComboBox1);
-        jComboBox1.setBounds(620, 20, 79, 27);
+        jComboBox1.setBounds(620, 20, 110, 27);
 
         jLabelSUS_CadPaciente.setText("Nº SUS");
         jPanel1.add(jLabelSUS_CadPaciente);
