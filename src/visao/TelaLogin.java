@@ -84,7 +84,7 @@ public class TelaLogin extends javax.swing.JFrame {
 
         jLabelLogo_Gabiru.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/RAT7.png"))); // NOI18N
         getContentPane().add(jLabelLogo_Gabiru);
-        jLabelLogo_Gabiru.setBounds(10, 270, 30, 30);
+        jLabelLogo_Gabiru.setBounds(10, 270, 0, 0);
 
         jLabelFundoLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/2e8dd494ade012aa9bcb62519744b4a9.jpg"))); // NOI18N
         jLabelFundoLogin.setText("jLabelFundoLogin");
