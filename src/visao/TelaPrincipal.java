@@ -5,8 +5,6 @@
  */
 package visao;
 
-import controle.ConexaoBD;
-
 /**
  *
  * @author Anderson
