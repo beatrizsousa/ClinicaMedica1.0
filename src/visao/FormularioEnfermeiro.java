@@ -161,6 +161,11 @@ public class FormularioEnfermeiro extends javax.swing.JFrame {
         jButtonSalvar_CadEnfermeiro.setBounds(473, 393, 110, 30);
 
         jButtonCancelar_CadEnfermeiro.setText("Cancelar");
+        jButtonCancelar_CadEnfermeiro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCancelar_CadEnfermeiroActionPerformed(evt);
+            }
+        });
         CadastroDeEnfermeiros.add(jButtonCancelar_CadEnfermeiro);
         jButtonCancelar_CadEnfermeiro.setBounds(593, 393, 110, 30);
 
@@ -224,6 +229,10 @@ public class FormularioEnfermeiro extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "Preencha todos os campos");
         }
     }//GEN-LAST:event_jButtonSalvar_CadEnfermeiroActionPerformed
+
+    private void jButtonCancelar_CadEnfermeiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelar_CadEnfermeiroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonCancelar_CadEnfermeiroActionPerformed
 
     /**
      * @param args the command line arguments
