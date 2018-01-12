@@ -35,6 +35,8 @@ public class TelaLogin extends javax.swing.JFrame {
         jTextFieldUsuario = new javax.swing.JTextField();
         jTextFieldSenha = new javax.swing.JPasswordField();
         jLabelUsuario = new javax.swing.JLabel();
+        jLabelLogoSaudeSystem = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jLabelFundoLogin = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -75,6 +77,14 @@ public class TelaLogin extends javax.swing.JFrame {
         jLabelUsuario.setText("Usuário");
         getContentPane().add(jLabelUsuario);
         jLabelUsuario.setBounds(260, 120, 50, 20);
+
+        jLabelLogoSaudeSystem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/LogoPronto.png"))); // NOI18N
+        getContentPane().add(jLabelLogoSaudeSystem);
+        jLabelLogoSaudeSystem.setBounds(30, 100, 250, 100);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/RAT7.png"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(10, 274, 60, 20);
 
         jLabelFundoLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/2e8dd494ade012aa9bcb62519744b4a9.jpg"))); // NOI18N
         jLabelFundoLogin.setText("jLabelFundoLogin");
@@ -144,7 +154,9 @@ public class TelaLogin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonLogin;
     private javax.swing.JButton jButtonSair;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabelFundoLogin;
+    private javax.swing.JLabel jLabelLogoSaudeSystem;
     private javax.swing.JLabel jLabelSenha;
     private javax.swing.JLabel jLabelUsuario;
     private javax.swing.JPasswordField jTextFieldSenha;
