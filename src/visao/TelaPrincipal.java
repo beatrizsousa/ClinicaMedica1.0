@@ -73,6 +73,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jButtonEnfermeiroDoBemVindo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/enfermeiro.png"))); // NOI18N
         jButtonEnfermeiroDoBemVindo.setToolTipText("Cadastro de Enfermeiros");
+        jButtonEnfermeiroDoBemVindo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonEnfermeiroDoBemVindoActionPerformed(evt);
+            }
+        });
         jPanelDoInternalFrame.add(jButtonEnfermeiroDoBemVindo);
         jButtonEnfermeiroDoBemVindo.setBounds(260, 150, 90, 80);
 
@@ -195,6 +200,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
         form.setVisible(true);
         dispose();
     }//GEN-LAST:event_jMenuItemCadMedicoActionPerformed
+
+    private void jButtonEnfermeiroDoBemVindoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEnfermeiroDoBemVindoActionPerformed
+        FormularioEnfermeiro form = new FormularioEnfermeiro();
+        form.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButtonEnfermeiroDoBemVindoActionPerformed
 
     /**
      * @param args the command line arguments
