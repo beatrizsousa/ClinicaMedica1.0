@@ -113,7 +113,7 @@ public class TelaExame extends javax.swing.JFrame {
            || !jTextFieldExames_SolicitarExame.getText().isEmpty()            
          ) {
             
-            exame.setNome(jTextFieldExames_SolicitarExame.getText());
+            exame.setDescricao(jTextFieldExames_SolicitarExame.getText());
             medico.setNome(jTextFieldNomeMedico_SolicitarExame.getText());
             paciente.setNome(jTextFieldNomePaciente_SolicitarExame.getText());
                   
