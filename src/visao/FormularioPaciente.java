@@ -63,6 +63,8 @@ public class FormularioPaciente extends javax.swing.JFrame {
         jLabelObs_CadPaciente = new javax.swing.JLabel();
         jTextField14 = new javax.swing.JTextField();
         jComboBox3 = new javax.swing.JComboBox<>();
+        jButtonSalvar_CadPaciente = new javax.swing.JButton();
+        jButtonCancelar_CadPaciente = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -70,7 +72,7 @@ public class FormularioPaciente extends javax.swing.JFrame {
         jLabelCadPaciente.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
         jLabelCadPaciente.setText("Cadastro de Pacientes");
         getContentPane().add(jLabelCadPaciente);
-        jLabelCadPaciente.setBounds(290, 10, 190, 30);
+        jLabelCadPaciente.setBounds(290, 10, 190, 20);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel1.setLayout(null);
@@ -192,16 +194,24 @@ public class FormularioPaciente extends javax.swing.JFrame {
 
         jLabelObs_CadPaciente.setText("Observação do Paciente");
         jPanel1.add(jLabelObs_CadPaciente);
-        jLabelObs_CadPaciente.setBounds(10, 290, 168, 17);
+        jLabelObs_CadPaciente.setBounds(10, 280, 168, 17);
         jPanel1.add(jTextField14);
-        jTextField14.setBounds(10, 320, 720, 60);
+        jTextField14.setBounds(10, 300, 720, 60);
 
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione", "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" }));
         jPanel1.add(jComboBox3);
         jComboBox3.setBounds(440, 240, 110, 27);
 
+        jButtonSalvar_CadPaciente.setText("Salvar");
+        jPanel1.add(jButtonSalvar_CadPaciente);
+        jButtonSalvar_CadPaciente.setBounds(280, 370, 72, 20);
+
+        jButtonCancelar_CadPaciente.setText("Cancelar");
+        jPanel1.add(jButtonCancelar_CadPaciente);
+        jButtonCancelar_CadPaciente.setBounds(360, 370, 74, 20);
+
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(10, 50, 740, 390);
+        jPanel1.setBounds(10, 40, 740, 400);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -254,6 +264,8 @@ public class FormularioPaciente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonCancelar_CadPaciente;
+    private javax.swing.JButton jButtonSalvar_CadPaciente;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
