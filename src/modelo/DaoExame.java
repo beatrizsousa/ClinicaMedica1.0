@@ -44,9 +44,8 @@ public class DaoExame {
         try {
 
             PreparedStatement stmtExame = connection.con.prepareStatement(sqlExame);
-            
-            //stmtExame.setString(1, exame.getId_p());
-            //stmtExame.setString(2, exame.getId_m());
+            stmtExame.setInt(1, paciente.getId());
+            stmtExame.setInt(2, medico.getId());
 
             stmtExame.execute();
 
@@ -79,7 +78,7 @@ public class DaoExame {
 
     }
 
-    public void alteraExame(Exame exame, String id) throws ClassNotFoundException {
+    public void alteraExame(Exame exame, String id, Paciente paciente, Medico medico) throws ClassNotFoundException {
 
         connection.Conexao();
 
@@ -88,9 +87,9 @@ public class DaoExame {
         try {
 
             PreparedStatement stmtExame = connection.con.prepareStatement(sqlExame);
-
-            //stmtExame.setString(1, exame.getId_p());
-            //stmtExame.setString(2, exame.getId_m());
+            
+            stmtExame.setInt(1, paciente.getId());
+            stmtExame.setInt(2, medico.getId());
 
             stmtExame.executeUpdate();
 
