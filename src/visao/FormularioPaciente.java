@@ -79,31 +79,31 @@ public class FormularioPaciente extends javax.swing.JFrame {
 
         jLabel1.setText("Nome");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(10, 30, 42, 17);
+        jLabel1.setBounds(20, 10, 27, 14);
         jPanel1.add(jTextFieldNome_CadPaciente);
-        jTextFieldNome_CadPaciente.setBounds(60, 20, 490, 27);
+        jTextFieldNome_CadPaciente.setBounds(20, 30, 490, 20);
 
         jLabelRua_CadPaciente.setText("Rua");
         jPanel1.add(jLabelRua_CadPaciente);
-        jLabelRua_CadPaciente.setBounds(10, 220, 25, 17);
+        jLabelRua_CadPaciente.setBounds(10, 220, 19, 14);
         jPanel1.add(jTextFieldCPF_CadPaciente);
-        jTextFieldCPF_CadPaciente.setBounds(60, 60, 180, 27);
+        jTextFieldCPF_CadPaciente.setBounds(20, 70, 180, 20);
 
         jLabelCPF_CadPaciente.setText("CPF");
         jPanel1.add(jLabelCPF_CadPaciente);
-        jLabelCPF_CadPaciente.setBounds(10, 70, 27, 17);
+        jLabelCPF_CadPaciente.setBounds(20, 50, 19, 14);
         jPanel1.add(jTextField3);
-        jTextField3.setBounds(40, 210, 350, 27);
+        jTextField3.setBounds(40, 210, 350, 20);
 
         jLabelNasc_CadPaciente.setText("Data de Nasc.");
         jPanel1.add(jLabelNasc_CadPaciente);
-        jLabelNasc_CadPaciente.setBounds(250, 70, 100, 17);
+        jLabelNasc_CadPaciente.setBounds(250, 70, 100, 14);
         jPanel1.add(jTextField4);
-        jTextField4.setBounds(350, 60, 150, 27);
+        jTextField4.setBounds(350, 60, 150, 20);
 
         jLabel5.setText("Sexo");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(570, 30, 40, 17);
+        jLabel5.setBounds(570, 30, 40, 14);
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione", "Masculino", "Feminino" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -112,11 +112,11 @@ public class FormularioPaciente extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jComboBox1);
-        jComboBox1.setBounds(620, 20, 110, 27);
+        jComboBox1.setBounds(620, 20, 110, 20);
 
         jLabelSUS_CadPaciente.setText("Nº SUS");
         jPanel1.add(jLabelSUS_CadPaciente);
-        jLabelSUS_CadPaciente.setBounds(260, 110, 50, 17);
+        jLabelSUS_CadPaciente.setBounds(260, 110, 50, 14);
 
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -124,37 +124,37 @@ public class FormularioPaciente extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextField5);
-        jTextField5.setBounds(320, 100, 180, 27);
+        jTextField5.setBounds(320, 100, 180, 20);
 
         jLabelMae_CadPaciente.setText("Nome da mãe");
         jPanel1.add(jLabelMae_CadPaciente);
-        jLabelMae_CadPaciente.setBounds(10, 140, 100, 17);
+        jLabelMae_CadPaciente.setBounds(10, 140, 100, 14);
         jPanel1.add(jTextField6);
-        jTextField6.setBounds(110, 140, 500, 27);
+        jTextField6.setBounds(110, 140, 500, 20);
 
         jLabelPai_CadPaciente.setText("Nome do pai");
         jPanel1.add(jLabelPai_CadPaciente);
-        jLabelPai_CadPaciente.setBounds(10, 180, 90, 17);
+        jLabelPai_CadPaciente.setBounds(10, 180, 90, 14);
         jPanel1.add(jTextField7);
-        jTextField7.setBounds(110, 180, 500, 27);
+        jTextField7.setBounds(110, 180, 500, 20);
 
         jLabelProfissao_CadPaciente.setText("Profissão");
         jPanel1.add(jLabelProfissao_CadPaciente);
-        jLabelProfissao_CadPaciente.setBounds(10, 100, 70, 17);
+        jLabelProfissao_CadPaciente.setBounds(10, 100, 70, 14);
         jPanel1.add(jTextField8);
-        jTextField8.setBounds(80, 100, 160, 27);
+        jTextField8.setBounds(80, 100, 160, 20);
 
         jLabelEstCivil_CadPaciente.setText("Estado Civil");
         jPanel1.add(jLabelEstCivil_CadPaciente);
-        jLabelEstCivil_CadPaciente.setBounds(520, 70, 80, 17);
+        jLabelEstCivil_CadPaciente.setBounds(520, 70, 80, 14);
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione", "Solteiro (a)", "Casado (a)", "Divorciado (a)", "Viuvo (a)" }));
         jPanel1.add(jComboBox2);
-        jComboBox2.setBounds(610, 60, 110, 27);
+        jComboBox2.setBounds(610, 60, 110, 20);
 
         jLabelNumCsa_CadPaciente.setText("Número");
         jPanel1.add(jLabelNumCsa_CadPaciente);
-        jLabelNumCsa_CadPaciente.setBounds(400, 220, 57, 17);
+        jLabelNumCsa_CadPaciente.setBounds(400, 220, 37, 14);
 
         jTextField9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -162,45 +162,45 @@ public class FormularioPaciente extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextField9);
-        jTextField9.setBounds(460, 210, 80, 27);
+        jTextField9.setBounds(460, 210, 80, 20);
 
         jLabelBaairro_CadPaciente.setText("Bairro");
         jPanel1.add(jLabelBaairro_CadPaciente);
-        jLabelBaairro_CadPaciente.setBounds(550, 220, 42, 17);
+        jLabelBaairro_CadPaciente.setBounds(550, 220, 28, 14);
         jPanel1.add(jTextField10);
-        jTextField10.setBounds(600, 210, 130, 27);
+        jTextField10.setBounds(600, 210, 130, 20);
 
         jLabelCidade_CadPaciente.setText("Cidade");
         jPanel1.add(jLabelCidade_CadPaciente);
-        jLabelCidade_CadPaciente.setBounds(230, 250, 48, 17);
+        jLabelCidade_CadPaciente.setBounds(230, 250, 33, 14);
         jPanel1.add(jTextField11);
-        jTextField11.setBounds(280, 240, 110, 27);
+        jTextField11.setBounds(280, 240, 110, 20);
 
         jLabelEstado_CadPaciente.setText("Estado");
         jPanel1.add(jLabelEstado_CadPaciente);
-        jLabelEstado_CadPaciente.setBounds(390, 250, 48, 17);
+        jLabelEstado_CadPaciente.setBounds(390, 250, 33, 14);
 
         jLabelCep_CadPaciente.setText("CEP");
         jPanel1.add(jLabelCep_CadPaciente);
-        jLabelCep_CadPaciente.setBounds(10, 250, 40, 17);
+        jLabelCep_CadPaciente.setBounds(10, 250, 40, 14);
         jPanel1.add(jTextField12);
-        jTextField12.setBounds(40, 240, 180, 27);
+        jTextField12.setBounds(40, 240, 180, 20);
 
         jLabelTelefone_CadPaciente.setText("Telefone");
         jPanel1.add(jLabelTelefone_CadPaciente);
-        jLabelTelefone_CadPaciente.setBounds(510, 110, 70, 17);
+        jLabelTelefone_CadPaciente.setBounds(510, 110, 70, 14);
         jPanel1.add(jTextField13);
-        jTextField13.setBounds(580, 100, 140, 27);
+        jTextField13.setBounds(580, 100, 140, 20);
 
         jLabelObs_CadPaciente.setText("Observação do Paciente");
         jPanel1.add(jLabelObs_CadPaciente);
-        jLabelObs_CadPaciente.setBounds(10, 280, 168, 17);
+        jLabelObs_CadPaciente.setBounds(10, 280, 117, 14);
         jPanel1.add(jTextField14);
         jTextField14.setBounds(10, 300, 720, 60);
 
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione", "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" }));
         jPanel1.add(jComboBox3);
-        jComboBox3.setBounds(440, 240, 110, 27);
+        jComboBox3.setBounds(440, 240, 110, 20);
 
         jButtonSalvar_CadPaciente.setText("Salvar");
         jPanel1.add(jButtonSalvar_CadPaciente);
@@ -208,7 +208,7 @@ public class FormularioPaciente extends javax.swing.JFrame {
 
         jButtonCancelar_CadPaciente.setText("Cancelar");
         jPanel1.add(jButtonCancelar_CadPaciente);
-        jButtonCancelar_CadPaciente.setBounds(360, 370, 74, 20);
+        jButtonCancelar_CadPaciente.setBounds(360, 370, 75, 20);
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(10, 40, 740, 400);
