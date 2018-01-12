@@ -131,9 +131,19 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenuCadastro.add(jMenuItemCadMedico);
 
         jMenuItemCadPacientes.setText("Pacientes");
+        jMenuItemCadPacientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemCadPacientesActionPerformed(evt);
+            }
+        });
         jMenuCadastro.add(jMenuItemCadPacientes);
 
         jMenuItemCadEnfermeiros.setText("Enfermeiros");
+        jMenuItemCadEnfermeiros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemCadEnfermeirosActionPerformed(evt);
+            }
+        });
         jMenuCadastro.add(jMenuItemCadEnfermeiros);
 
         jMenuItemCadUsuarios.setText("Usuarios");
@@ -206,6 +216,18 @@ public class TelaPrincipal extends javax.swing.JFrame {
         form.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButtonEnfermeiroDoBemVindoActionPerformed
+
+    private void jMenuItemCadEnfermeirosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadEnfermeirosActionPerformed
+       FormularioEnfermeiro form_enf = new FormularioEnfermeiro();
+       form_enf.setVisible(true);
+       dispose();
+    }//GEN-LAST:event_jMenuItemCadEnfermeirosActionPerformed
+
+    private void jMenuItemCadPacientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadPacientesActionPerformed
+       FormularioPaciente form_pac = new FormularioPaciente();
+       form_pac.setVisible(true);
+       dispose();
+    }//GEN-LAST:event_jMenuItemCadPacientesActionPerformed
 
     /**
      * @param args the command line arguments
