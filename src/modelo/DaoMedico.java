@@ -38,8 +38,8 @@ public class DaoMedico {
         connection.Conexao();
 
         String sqlMedico = "insert into medico"
-                + "(nome, cpf, telefone, nascimento, sexo, crm, especialidade, idEndereco)"
-                + " values(?, ?, ?, ?, ?, ?, ?, ?)",
+                + "(nome, cpf, telefone, nascimento, sexo, crm, especialidade, idEndereco, valorconsulta)"
+                + " values(?, ?, ?, ?, ?, ?, ?, ?, ?)",
                 
                 sqlEndereco = "insert into endereco"
                 + "(rua, numero, bairro, cidade, estado, cep)"
@@ -77,7 +77,8 @@ public class DaoMedico {
             stmtMedico.setString(5, medico.getSexo());
             stmtMedico.setString(6, medico.getCrm());
             stmtMedico.setString(7, medico.getEspecialidade());
-            stmtMedico.setInt(8, idEndereco);
+            stmtMedico.setInt(9, idEndereco);
+            stmtMedico.setString(8, medico.getValorConsulta());
 
             stmtMedico.execute();
             
@@ -115,7 +116,7 @@ public class DaoMedico {
 
         connection.Conexao();
 
-        String sqlMedico = "update medico set id = ?, nome = ?, cpf = ? telefone = ?, nascimento = ?, sexo = ?, crm = ?, especialidade = ? where id='" + id + "'";
+        String sqlMedico = "update medico set id = ?, nome = ?, cpf = ? telefone = ?, nascimento = ?, sexo = ?, crm = ?, especialidade = ?, valorconsulta = ? where id='" + id + "'";
                 
         String sqlEndereco = "update endereco set rua = ?, numero = ?, bairro = ?, cidade = ?, estado = ?, cep = ? where id='" + id + "'";
 
@@ -152,7 +153,8 @@ public class DaoMedico {
             stmtMedico.setString(5, medico.getSexo());
             stmtMedico.setString(6, medico.getCrm());
             stmtMedico.setString(7, medico.getEspecialidade());
-            stmtMedico.setInt(8, idEndereco);
+            stmtMedico.setInt(9, idEndereco);
+            stmtMedico.setString(8, medico.getValorConsulta());
 
             stmtMedico.executeUpdate();
 
