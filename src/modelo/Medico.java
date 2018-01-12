@@ -12,12 +12,13 @@ package modelo;
 public class Medico extends Pessoa{
     private String crm;
     private String especialidade;
+    private String valorconsulta;
     
     public Medico() {
         
     }
     
-    public Medico(String id, String nome, String cpf, String rua, String numero, String bairro, String cidade, String estado, String cep, String telefone, String nascimento, String sexo, String crm, String especialidade) {
+    public Medico(String id, String nome, String cpf, String rua, String numero, String bairro, String cidade, String estado, String cep, String telefone, String nascimento, String sexo, String crm, String especialidade, String valorconsulta) {
         super(id, nome, cpf, rua, numero, bairro, cidade, estado, cep, telefone, nascimento, sexo);
         this.crm = crm;
         this.especialidade = especialidade;
@@ -37,5 +38,12 @@ public class Medico extends Pessoa{
 
     public void setEspecialidade(String especialidade) {
         this.especialidade = especialidade;
-    }    
+    }
+    public String getValorconsulta() {
+        return valorconsulta;
+    }
+
+    public void setValorconsulta(String valorconsulta) {
+        this.valorconsulta = valorconsulta;
+    }
 }

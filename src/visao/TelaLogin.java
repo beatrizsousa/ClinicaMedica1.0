@@ -33,10 +33,8 @@ public class TelaLogin extends javax.swing.JFrame {
         jButtonSair = new javax.swing.JButton();
         jLabelSenha = new javax.swing.JLabel();
         jTextFieldUsuario = new javax.swing.JTextField();
-        jLabelLogoSystemSaude = new javax.swing.JLabel();
         jTextFieldSenha = new javax.swing.JPasswordField();
         jLabelUsuario = new javax.swing.JLabel();
-        jLabelLogo_Gabiru = new javax.swing.JLabel();
         jLabelFundoLogin = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -71,20 +69,12 @@ public class TelaLogin extends javax.swing.JFrame {
         });
         getContentPane().add(jTextFieldUsuario);
         jTextFieldUsuario.setBounds(310, 110, 160, 30);
-
-        jLabelLogoSystemSaude.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/JJJ.png"))); // NOI18N
-        getContentPane().add(jLabelLogoSystemSaude);
-        jLabelLogoSystemSaude.setBounds(20, 80, 220, 140);
         getContentPane().add(jTextFieldSenha);
         jTextFieldSenha.setBounds(310, 150, 160, 30);
 
         jLabelUsuario.setText("Usuário");
         getContentPane().add(jLabelUsuario);
         jLabelUsuario.setBounds(260, 120, 50, 20);
-
-        jLabelLogo_Gabiru.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/RAT7.png"))); // NOI18N
-        getContentPane().add(jLabelLogo_Gabiru);
-        jLabelLogo_Gabiru.setBounds(10, 270, 0, 0);
 
         jLabelFundoLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/2e8dd494ade012aa9bcb62519744b4a9.jpg"))); // NOI18N
         jLabelFundoLogin.setText("jLabelFundoLogin");
@@ -155,8 +145,6 @@ public class TelaLogin extends javax.swing.JFrame {
     private javax.swing.JButton jButtonLogin;
     private javax.swing.JButton jButtonSair;
     private javax.swing.JLabel jLabelFundoLogin;
-    private javax.swing.JLabel jLabelLogoSystemSaude;
-    private javax.swing.JLabel jLabelLogo_Gabiru;
     private javax.swing.JLabel jLabelSenha;
     private javax.swing.JLabel jLabelUsuario;
     private javax.swing.JPasswordField jTextFieldSenha;
