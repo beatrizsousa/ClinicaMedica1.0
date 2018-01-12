@@ -21,7 +21,7 @@ public class Paciente extends Pessoa{
         
     }
     
-    public Paciente(String id, String nome, String cpf, String rua, String numero, String bairro, String cidade, String estado, String cep, String telefone, String nascimento, String sexo, String sus, String observacao, String pai, String mae, String estadoCivil, String profissao) {
+    public Paciente(int id, String nome, String cpf, String rua, String numero, String bairro, String cidade, String estado, String cep, String telefone, String nascimento, String sexo, String sus, String observacao, String pai, String mae, String estadoCivil, String profissao) {
         super(id, nome, cpf, rua, numero, bairro, cidade, estado, cep, telefone, nascimento, sexo);
         this.sus = sus;
         this.observacao = observacao;

@@ -10,7 +10,7 @@ package modelo;
  * @author Antonio de Carvalho
  */
 public class Pessoa {
-    private String id;
+    private int id;
     private String nome;
     private String cpf;
     private String rua;
@@ -27,7 +27,7 @@ public class Pessoa {
 
     }
     
-    public Pessoa(String id, String nome, String cpf, String rua, String numero, String bairro, String cidade, String estado, String cep, String telefone, String nascimento, String sexo) {
+    public Pessoa(int id, String nome, String cpf, String rua, String numero, String bairro, String cidade, String estado, String cep, String telefone, String nascimento, String sexo) {
         this.id = id;
         this.nome = nome;
         this.cpf = cpf;
@@ -43,11 +43,11 @@ public class Pessoa {
         this.sexo = sexo;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
