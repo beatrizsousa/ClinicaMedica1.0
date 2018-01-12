@@ -16,7 +16,7 @@ public class LaudoMedico extends Pessoa{
         
     }
     
-    public LaudoMedico(String id, String nome, String cpf, String rua, String numero, String bairro, String cidade, String estado, String cep, String telefone, String nascimento, String sexo, String coren) {
+    public LaudoMedico(int id, String nome, String cpf, String rua, String numero, String bairro, String cidade, String estado, String cep, String telefone, String nascimento, String sexo, String coren) {
         super(id, nome, cpf, rua, numero, bairro, cidade, estado, cep, telefone, nascimento, sexo);
         this.coren = coren;
     }
