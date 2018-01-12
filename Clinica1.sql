@@ -25,16 +25,15 @@ DROP TABLE IF EXISTS `endereco`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `endereco` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `rua` varchar(100) NOT NULL,
-  `numero` varchar(6) NOT NULL,
-  `bairro` varchar(25) NOT NULL,
-  `cidade` varchar(50) NOT NULL,
-  `estado` varchar(50) NOT NULL,
-  `cep` varchar(8) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `int_UNIQUE` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `rua` varchar(40) NOT NULL,
+  `numero` int(11) NOT NULL,
+  `bairro` varchar(40) NOT NULL,
+  `cidade` varchar(40) NOT NULL,
+  `estado` varchar(30) NOT NULL,
+  `cep` int(8) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -43,7 +42,7 @@ CREATE TABLE `endereco` (
 
 LOCK TABLES `endereco` WRITE;
 /*!40000 ALTER TABLE `endereco` DISABLE KEYS */;
-INSERT INTO `endereco` VALUES (1,'dfgh','23','sdfgh','sdfghj','AL','123456');
+INSERT INTO `endereco` VALUES (1,'rua b',23,'nada','nada','AC',23456),(2,'werty gfd',23,'asdfg fds','centro','AC',2345);
 /*!40000 ALTER TABLE `endereco` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -60,12 +59,12 @@ CREATE TABLE `enfermeiro` (
   `cpf` int(11) NOT NULL,
   `telefone` int(11) NOT NULL,
   `nascimento` date NOT NULL,
-  `sexo` enum('M','F') NOT NULL,
+  `sexo` enum('Masculino','Feminino','Outro') NOT NULL,
   `coren` varchar(8) NOT NULL,
   `idEndereco` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `idEndereco` (`idEndereco`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -74,6 +73,7 @@ CREATE TABLE `enfermeiro` (
 
 LOCK TABLES `enfermeiro` WRITE;
 /*!40000 ALTER TABLE `enfermeiro` DISABLE KEYS */;
+INSERT INTO `enfermeiro` VALUES (1,'antonio',3456,76543,'2010-10-13','Masculino','7654',2);
 /*!40000 ALTER TABLE `enfermeiro` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -88,10 +88,11 @@ CREATE TABLE `exame` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `id_p` int(5) NOT NULL,
   `id_m` int(5) NOT NULL,
+  `descricao` varchar(1000) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `id_p` (`id_p`),
   KEY `id_m` (`id_m`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -100,6 +101,7 @@ CREATE TABLE `exame` (
 
 LOCK TABLES `exame` WRITE;
 /*!40000 ALTER TABLE `exame` DISABLE KEYS */;
+INSERT INTO `exame` VALUES (1,0,0,'Sangue');
 /*!40000 ALTER TABLE `exame` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -169,13 +171,14 @@ CREATE TABLE `medico` (
   `cpf` int(11) NOT NULL,
   `telefone` int(11) NOT NULL,
   `nascimento` date NOT NULL,
-  `sexo` enum('M','F') NOT NULL,
+  `sexo` enum('Masculino','Feminino','Outro') NOT NULL,
   `crm` int(20) NOT NULL,
   `especialidade` varchar(30) NOT NULL,
   `idEndereco` int(11) NOT NULL,
+  `valorconsulta` decimal(4,2) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `idEndereco` (`idEndereco`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -184,6 +187,7 @@ CREATE TABLE `medico` (
 
 LOCK TABLES `medico` WRITE;
 /*!40000 ALTER TABLE `medico` DISABLE KEYS */;
+INSERT INTO `medico` VALUES (1,'Anderson',3456,2345,'2010-10-10','Masculino',23456,'Cardiologia',1,0.00);
 /*!40000 ALTER TABLE `medico` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -200,7 +204,7 @@ CREATE TABLE `paciente` (
   `cpf` int(11) NOT NULL,
   `telefone` int(11) NOT NULL,
   `nascimento` date NOT NULL,
-  `sexo` enum('M','F') NOT NULL,
+  `sexo` enum('Masculino','Feminino','Outro') NOT NULL,
   `sus` int(16) DEFAULT NULL,
   `observacao` varchar(80) NOT NULL,
   `pai` varchar(40) NOT NULL,
@@ -253,6 +257,39 @@ LOCK TABLES `receitamedica` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `recepcionista`
+--
+
+DROP TABLE IF EXISTS `recepcionista`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `recepcionista` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(40) NOT NULL,
+  `cpf` int(11) NOT NULL,
+  `telefone` int(11) NOT NULL,
+  `nascimento` date NOT NULL,
+  `sexo` enum('Masculino','Feminino','Outro') NOT NULL,
+  `idEndereco` int(11) NOT NULL,
+  `id_p` int(5) NOT NULL,
+  `id_m` int(5) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `idEndereco` (`idEndereco`),
+  KEY `id_p` (`id_p`),
+  KEY `id_m` (`id_m`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `recepcionista`
+--
+
+LOCK TABLES `recepcionista` WRITE;
+/*!40000 ALTER TABLE `recepcionista` DISABLE KEYS */;
+/*!40000 ALTER TABLE `recepcionista` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Dumping events for database 'clinica'
 --
 
@@ -269,4 +306,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-01-12  1:21:34
+-- Dump completed on 2018-01-12 21:06:00

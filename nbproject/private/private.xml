@@ -4,17 +4,12 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/toni0/Documents/GitHub/ClinicaMedica1.0/src/modelo/Paciente.java</file>
-            <file>file:/C:/Users/toni0/Documents/GitHub/ClinicaMedica1.0/src/modelo/LaudoMedico.java</file>
-            <file>file:/C:/Users/toni0/Documents/GitHub/ClinicaMedica1.0/src/modelo/Medicamento.java</file>
-            <file>file:/C:/Users/toni0/Documents/GitHub/ClinicaMedica1.0/src/modelo/DaoPaciente.java</file>
             <file>file:/C:/Users/toni0/Documents/GitHub/ClinicaMedica1.0/src/modelo/DaoExame.java</file>
             <file>file:/C:/Users/toni0/Documents/GitHub/ClinicaMedica1.0/src/modelo/Pessoa.java</file>
-            <file>file:/C:/Users/toni0/Documents/GitHub/ClinicaMedica1.0/src/modelo/DaoEnfermeiro.java</file>
-            <file>file:/C:/Users/toni0/Documents/GitHub/ClinicaMedica1.0/src/modelo/DaoMedico.java</file>
+            <file>file:/C:/Users/toni0/Documents/GitHub/ClinicaMedica1.0/src/visao/TelaLogin.java</file>
+            <file>file:/C:/Users/toni0/Documents/GitHub/ClinicaMedica1.0/src/visao/TelaExame.java</file>
             <file>file:/C:/Users/toni0/Documents/GitHub/ClinicaMedica1.0/src/modelo/Medico.java</file>
             <file>file:/C:/Users/toni0/Documents/GitHub/ClinicaMedica1.0/src/modelo/Exame.java</file>
-            <file>file:/C:/Users/toni0/Documents/GitHub/ClinicaMedica1.0/src/modelo/ReceitaMedica.java</file>
-            <file>file:/C:/Users/toni0/Documents/GitHub/ClinicaMedica1.0/src/modelo/Enfermeiro.java</file>
         </group>
     </open-files>
 </project-private>
