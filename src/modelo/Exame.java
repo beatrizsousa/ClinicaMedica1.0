@@ -9,13 +9,23 @@ package modelo;
  *
  * @author Antonio de Carvalho
  */
-public class Exame extends Paciente{
+public class Exame extends Pessoa{
+    private String descricao;
     
     public Exame() {
         
     }
     
-    public Exame(String id, String nome, String cpf, String rua, String numero, String bairro, String cidade, String estado, String cep, String telefone, String nascimento, String sexo, String coren) {
-        //super(id, nome, cpf, rua, numero, bairro, cidade, estado, cep, telefone, nascimento, sexo, coren);
-    }  
+    public Exame(int id, String nome, String cpf, String rua, String numero, String bairro, String cidade, String estado, String cep, String telefone, String nascimento, String sexo) {
+        super(id, nome, cpf, rua, numero, bairro, cidade, estado, cep, telefone, nascimento, sexo);
+        this.descricao = descricao;
+    }
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+    
 }

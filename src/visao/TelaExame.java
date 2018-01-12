@@ -114,7 +114,7 @@ public class TelaExame extends javax.swing.JFrame {
                   
 
             try {
-                daoExame.adicionaExame(Exame);
+                daoExame.adicionaExame(Exame exame);
             } catch (ClassNotFoundException ex) {
                 Logger.getLogger(TelaExame.class.getName()).log(Level.SEVERE, null, ex);
             }

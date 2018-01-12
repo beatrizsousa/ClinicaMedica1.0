@@ -39,13 +39,14 @@ public class DaoExame {
 
         
         String sqlExame = "insert into exame"
-                + "(id_p, id_m)"
-                + " values(?, ?)";
+                + "(id_p, id_m, descricao)"
+                + " values(?, ?, ?)";
         try {
 
             PreparedStatement stmtExame = connection.con.prepareStatement(sqlExame);
             stmtExame.setInt(1, paciente.getId());
             stmtExame.setInt(2, medico.getId());
+            stmtExame.setString(3, exame.getDescricao());
 
             stmtExame.execute();
 
@@ -82,7 +83,7 @@ public class DaoExame {
 
         connection.Conexao();
 
-        String sqlExame = "update exame set id_p = ?, id_m = ? where id='" + id + "'";
+        String sqlExame = "update exame set id_p = ?, id_m = ?, descricao = ? where id='" + id + "'";
                 
         try {
 
@@ -90,6 +91,7 @@ public class DaoExame {
             
             stmtExame.setInt(1, paciente.getId());
             stmtExame.setInt(2, medico.getId());
+            stmtExame.setString(3, exame.getDescricao());
 
             stmtExame.executeUpdate();
 
