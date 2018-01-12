@@ -80,11 +80,11 @@ public class TelaLogin extends javax.swing.JFrame {
 
         jLabelLogoSaudeSystem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/LogoPronto.png"))); // NOI18N
         getContentPane().add(jLabelLogoSaudeSystem);
-        jLabelLogoSaudeSystem.setBounds(30, 100, 250, 100);
+        jLabelLogoSaudeSystem.setBounds(20, 100, 250, 100);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/RAT7.png"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(10, 274, 60, 20);
+        jLabel1.setBounds(10, 264, 60, 30);
 
         jLabelFundoLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/2e8dd494ade012aa9bcb62519744b4a9.jpg"))); // NOI18N
         jLabelFundoLogin.setText("jLabelFundoLogin");
