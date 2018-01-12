@@ -100,4 +100,8 @@ public class DaoExame {
         }
         connection.Desconecta();
     }
+
+    public void adicionaExame(Exame exame) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

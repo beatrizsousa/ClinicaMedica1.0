@@ -28,19 +28,22 @@ public class TelaPrincipalRecepcionista extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabelTela_PrincipalRecepcionista = new javax.swing.JLabel();
         jButtonCadPaciente_TelaRecepcionista = new javax.swing.JButton();
         jButtonAgendarConsulta_TelaRecepcionista = new javax.swing.JButton();
         jButtonEmitirRelatorio_TelaRecepcionista = new javax.swing.JButton();
+        jLabelTela_PrincipalRecepcionista = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        getContentPane().setLayout(null);
 
+        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel1.setMinimumSize(new java.awt.Dimension(740, 400));
         jPanel1.setPreferredSize(new java.awt.Dimension(740, 400));
-
-        jLabelTela_PrincipalRecepcionista.setText("Recepcionista");
+        jPanel1.setLayout(null);
 
         jButtonCadPaciente_TelaRecepcionista.setText("Cadastrar Paciente");
+        jPanel1.add(jButtonCadPaciente_TelaRecepcionista);
+        jButtonCadPaciente_TelaRecepcionista.setBounds(250, 40, 160, 50);
 
         jButtonAgendarConsulta_TelaRecepcionista.setText("Agendar Consulta");
         jButtonAgendarConsulta_TelaRecepcionista.addActionListener(new java.awt.event.ActionListener() {
@@ -48,55 +51,20 @@ public class TelaPrincipalRecepcionista extends javax.swing.JFrame {
                 jButtonAgendarConsulta_TelaRecepcionistaActionPerformed(evt);
             }
         });
+        jPanel1.add(jButtonAgendarConsulta_TelaRecepcionista);
+        jButtonAgendarConsulta_TelaRecepcionista.setBounds(500, 40, 160, 50);
 
         jButtonEmitirRelatorio_TelaRecepcionista.setText("Emitir Relatório");
+        jPanel1.add(jButtonEmitirRelatorio_TelaRecepcionista);
+        jButtonEmitirRelatorio_TelaRecepcionista.setBounds(20, 30, 160, 50);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(294, 294, 294)
-                .addComponent(jLabelTela_PrincipalRecepcionista, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(277, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jButtonEmitirRelatorio_TelaRecepcionista, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jButtonCadPaciente_TelaRecepcionista, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButtonAgendarConsulta_TelaRecepcionista, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGap(319, 319, 319))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabelTela_PrincipalRecepcionista, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(61, 61, 61)
-                .addComponent(jButtonCadPaciente_TelaRecepcionista)
-                .addGap(18, 18, 18)
-                .addComponent(jButtonAgendarConsulta_TelaRecepcionista)
-                .addGap(18, 18, 18)
-                .addComponent(jButtonEmitirRelatorio_TelaRecepcionista)
-                .addContainerGap(220, Short.MAX_VALUE))
-        );
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(10, 44, 740, 400);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 433, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+        jLabelTela_PrincipalRecepcionista.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabelTela_PrincipalRecepcionista.setText("Bem-Vindo, ");
+        getContentPane().add(jLabelTela_PrincipalRecepcionista);
+        jLabelTela_PrincipalRecepcionista.setBounds(20, 10, 116, 29);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

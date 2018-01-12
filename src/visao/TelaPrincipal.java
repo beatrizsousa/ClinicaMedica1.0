@@ -45,7 +45,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenuItemCadMedico = new javax.swing.JMenuItem();
         jMenuItemCadPacientes = new javax.swing.JMenuItem();
         jMenuItemCadEnfermeiros = new javax.swing.JMenuItem();
-        jMenuItemCadUsuarios = new javax.swing.JMenuItem();
         jMenuRelatorios = new javax.swing.JMenu();
         Ferramentas = new javax.swing.JMenu();
         jMenuItemTelaBemVindo = new javax.swing.JMenuItem();
@@ -145,9 +144,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
         jMenuCadastro.add(jMenuItemCadEnfermeiros);
-
-        jMenuItemCadUsuarios.setText("Usuarios");
-        jMenuCadastro.add(jMenuItemCadUsuarios);
 
         jMenuBar1.add(jMenuCadastro);
 
@@ -281,7 +277,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItemCadEnfermeiros;
     private javax.swing.JMenuItem jMenuItemCadMedico;
     private javax.swing.JMenuItem jMenuItemCadPacientes;
-    private javax.swing.JMenuItem jMenuItemCadUsuarios;
     private javax.swing.JMenuItem jMenuItemSair;
     private javax.swing.JMenuItem jMenuItemTelaBemVindo;
     private javax.swing.JMenu jMenuRelatorios;
