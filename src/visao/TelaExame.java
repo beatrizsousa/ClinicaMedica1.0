@@ -5,6 +5,16 @@
  */
 package visao;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+import modelo.DaoEnfermeiro;
+import modelo.DaoExame;
+import modelo.Enfermeiro;
+import modelo.Exame;
+import modelo.Medico;
+import modelo.Paciente;
+
 /**
  *
  * @author Anderson
@@ -31,11 +41,11 @@ public class TelaExame extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        jButtonSalvar_SolicitarExame = new javax.swing.JButton();
+        jButtonCancelar_SolicitarExame = new javax.swing.JButton();
+        jTextFieldNomeMedico_SolicitarExame = new javax.swing.JTextField();
+        jTextFieldNomePaciente_SolicitarExame = new javax.swing.JTextField();
+        jTextFieldExames_SolicitarExame = new javax.swing.JTextField();
         jLabelSolicitarExame = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -46,29 +56,34 @@ public class TelaExame extends javax.swing.JFrame {
 
         jLabel1.setText("Nome do Médico:");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(20, 14, 82, 20);
+        jLabel1.setBounds(20, 14, 130, 20);
 
         jLabel2.setText("Nome do Paciente:");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(20, 70, 90, 20);
+        jLabel2.setBounds(20, 70, 130, 20);
 
         jLabel3.setText("Exames:");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(20, 130, 41, 14);
+        jLabel3.setBounds(20, 130, 90, 14);
 
-        jButton1.setText("Salvar");
-        jPanel1.add(jButton1);
-        jButton1.setBounds(510, 370, 80, 30);
+        jButtonSalvar_SolicitarExame.setText("Salvar");
+        jButtonSalvar_SolicitarExame.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSalvar_SolicitarExameActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButtonSalvar_SolicitarExame);
+        jButtonSalvar_SolicitarExame.setBounds(510, 370, 80, 30);
 
-        jButton2.setText("Cancelar");
-        jPanel1.add(jButton2);
-        jButton2.setBounds(610, 370, 90, 30);
-        jPanel1.add(jTextField1);
-        jTextField1.setBounds(20, 40, 680, 30);
-        jPanel1.add(jTextField2);
-        jTextField2.setBounds(20, 90, 680, 30);
-        jPanel1.add(jTextField3);
-        jTextField3.setBounds(20, 150, 680, 180);
+        jButtonCancelar_SolicitarExame.setText("Cancelar");
+        jPanel1.add(jButtonCancelar_SolicitarExame);
+        jButtonCancelar_SolicitarExame.setBounds(610, 370, 90, 30);
+        jPanel1.add(jTextFieldNomeMedico_SolicitarExame);
+        jTextFieldNomeMedico_SolicitarExame.setBounds(20, 40, 680, 30);
+        jPanel1.add(jTextFieldNomePaciente_SolicitarExame);
+        jTextFieldNomePaciente_SolicitarExame.setBounds(20, 90, 680, 30);
+        jPanel1.add(jTextFieldExames_SolicitarExame);
+        jTextFieldExames_SolicitarExame.setBounds(20, 150, 680, 180);
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(10, 44, 730, 430);
@@ -81,6 +96,36 @@ public class TelaExame extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(769, 526));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButtonSalvar_SolicitarExameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSalvar_SolicitarExameActionPerformed
+       Exame exame = new Exame();
+       DaoExame daoExame = new DaoExame();
+       Medico medico = new Medico();
+       Paciente paciente =  new Paciente();
+        
+        if(!jTextFieldNomeMedico_SolicitarExame.getText().isEmpty()
+           || !jTextFieldNomePaciente_SolicitarExame.getText().isEmpty()
+           || !jTextFieldExames_SolicitarExame.getText().isEmpty()            
+         ) {
+            
+            exame.setNome(jTextFieldExames_SolicitarExame.getText());
+            medico.setNome(jTextFieldNomeMedico_SolicitarExame.getText());
+            paciente.setNome(jTextFieldNomePaciente_SolicitarExame.getText());
+                  
+
+            try {
+                daoExame.adicionaExame(Exame);
+            } catch (ClassNotFoundException ex) {
+                Logger.getLogger(TelaExame.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            
+            
+        dispose();
+        TelaPrincipal.main(null);
+        } else {
+            JOptionPane.showMessageDialog(rootPane, "Preencha todos os campos");
+        }
+    }//GEN-LAST:event_jButtonSalvar_SolicitarExameActionPerformed
 
     /**
      * @param args the command line arguments
@@ -118,15 +163,15 @@ public class TelaExame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButtonCancelar_SolicitarExame;
+    private javax.swing.JButton jButtonSalvar_SolicitarExame;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabelSolicitarExame;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextFieldExames_SolicitarExame;
+    private javax.swing.JTextField jTextFieldNomeMedico_SolicitarExame;
+    private javax.swing.JTextField jTextFieldNomePaciente_SolicitarExame;
     // End of variables declaration//GEN-END:variables
 }
