@@ -77,33 +77,39 @@ public class FormularioPaciente extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel1.setLayout(null);
 
-        jLabel1.setText("Nome");
+        jLabel1.setText("Nome:");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(20, 10, 27, 14);
+        jLabel1.setBounds(20, 20, 31, 14);
+
+        jTextFieldNome_CadPaciente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldNome_CadPacienteActionPerformed(evt);
+            }
+        });
         jPanel1.add(jTextFieldNome_CadPaciente);
-        jTextFieldNome_CadPaciente.setBounds(20, 30, 490, 20);
+        jTextFieldNome_CadPaciente.setBounds(60, 20, 450, 20);
 
         jLabelRua_CadPaciente.setText("Rua");
         jPanel1.add(jLabelRua_CadPaciente);
         jLabelRua_CadPaciente.setBounds(10, 220, 19, 14);
         jPanel1.add(jTextFieldCPF_CadPaciente);
-        jTextFieldCPF_CadPaciente.setBounds(20, 70, 180, 20);
+        jTextFieldCPF_CadPaciente.setBounds(50, 60, 180, 20);
 
         jLabelCPF_CadPaciente.setText("CPF");
         jPanel1.add(jLabelCPF_CadPaciente);
-        jLabelCPF_CadPaciente.setBounds(20, 50, 19, 14);
+        jLabelCPF_CadPaciente.setBounds(20, 60, 19, 14);
         jPanel1.add(jTextField3);
         jTextField3.setBounds(40, 210, 350, 20);
 
         jLabelNasc_CadPaciente.setText("Data de Nasc.");
         jPanel1.add(jLabelNasc_CadPaciente);
-        jLabelNasc_CadPaciente.setBounds(250, 70, 100, 14);
+        jLabelNasc_CadPaciente.setBounds(250, 60, 100, 14);
         jPanel1.add(jTextField4);
-        jTextField4.setBounds(350, 60, 150, 20);
+        jTextField4.setBounds(320, 60, 150, 20);
 
         jLabel5.setText("Sexo");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(570, 30, 40, 14);
+        jLabel5.setBounds(570, 20, 40, 14);
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione", "Masculino", "Feminino" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -116,7 +122,7 @@ public class FormularioPaciente extends javax.swing.JFrame {
 
         jLabelSUS_CadPaciente.setText("Nº SUS");
         jPanel1.add(jLabelSUS_CadPaciente);
-        jLabelSUS_CadPaciente.setBounds(260, 110, 50, 14);
+        jLabelSUS_CadPaciente.setBounds(270, 100, 50, 14);
 
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -146,7 +152,7 @@ public class FormularioPaciente extends javax.swing.JFrame {
 
         jLabelEstCivil_CadPaciente.setText("Estado Civil");
         jPanel1.add(jLabelEstCivil_CadPaciente);
-        jLabelEstCivil_CadPaciente.setBounds(520, 70, 80, 14);
+        jLabelEstCivil_CadPaciente.setBounds(530, 60, 80, 14);
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione", "Solteiro (a)", "Casado (a)", "Divorciado (a)", "Viuvo (a)" }));
         jPanel1.add(jComboBox2);
@@ -188,7 +194,7 @@ public class FormularioPaciente extends javax.swing.JFrame {
 
         jLabelTelefone_CadPaciente.setText("Telefone");
         jPanel1.add(jLabelTelefone_CadPaciente);
-        jLabelTelefone_CadPaciente.setBounds(510, 110, 70, 14);
+        jLabelTelefone_CadPaciente.setBounds(520, 100, 70, 14);
         jPanel1.add(jTextField13);
         jTextField13.setBounds(580, 100, 140, 20);
 
@@ -227,6 +233,10 @@ public class FormularioPaciente extends javax.swing.JFrame {
     private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField9ActionPerformed
+
+    private void jTextFieldNome_CadPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldNome_CadPacienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldNome_CadPacienteActionPerformed
 
     /**
      * @param args the command line arguments

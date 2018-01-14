@@ -78,6 +78,12 @@ public class TelaExame extends javax.swing.JFrame {
         jButtonCancelar_SolicitarExame.setText("Cancelar");
         jPanel1.add(jButtonCancelar_SolicitarExame);
         jButtonCancelar_SolicitarExame.setBounds(610, 370, 90, 30);
+
+        jTextFieldNomeMedico_SolicitarExame.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldNomeMedico_SolicitarExameActionPerformed(evt);
+            }
+        });
         jPanel1.add(jTextFieldNomeMedico_SolicitarExame);
         jTextFieldNomeMedico_SolicitarExame.setBounds(20, 40, 680, 30);
         jPanel1.add(jTextFieldNomePaciente_SolicitarExame);
@@ -126,6 +132,10 @@ public class TelaExame extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "Preencha todos os campos");
         }
     }//GEN-LAST:event_jButtonSalvar_SolicitarExameActionPerformed
+
+    private void jTextFieldNomeMedico_SolicitarExameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldNomeMedico_SolicitarExameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldNomeMedico_SolicitarExameActionPerformed
 
     /**
      * @param args the command line arguments

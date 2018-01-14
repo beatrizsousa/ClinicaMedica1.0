@@ -167,10 +167,10 @@ public class FormularioEnfermeiro extends javax.swing.JFrame {
         getContentPane().add(CadastroDeEnfermeiros);
         CadastroDeEnfermeiros.setBounds(10, 37, 733, 439);
 
-        jLabelCadastroDeEnfermeiros.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabelCadastroDeEnfermeiros.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabelCadastroDeEnfermeiros.setText("Cadastro de Enfermeiros");
         getContentPane().add(jLabelCadastroDeEnfermeiros);
-        jLabelCadastroDeEnfermeiros.setBounds(306, 9, 150, 17);
+        jLabelCadastroDeEnfermeiros.setBounds(306, 9, 210, 22);
 
         setSize(new java.awt.Dimension(769, 526));
         setLocationRelativeTo(null);

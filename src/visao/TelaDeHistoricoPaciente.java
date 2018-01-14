@@ -28,82 +28,52 @@ public class TelaDeHistoricoPaciente extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabelTelaDeHistorico_HistoricoPaciente = new javax.swing.JLabel();
         jLabelBuscarPaciente_HistoricoPaciente = new javax.swing.JLabel();
         jTextFieldBuscarPaciente_HistoricoPaciente = new javax.swing.JTextField();
         jButtonBusca_HistoricoPaciente = new javax.swing.JButton();
         jLabelHistorico_HistoricoPaciente = new javax.swing.JLabel();
         jTextFieldHistorico_HistoricoPaciente = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jLabelTelaDeHistorico_HistoricoPaciente = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(740, 400));
+        getContentPane().setLayout(null);
 
-        jLabelTelaDeHistorico_HistoricoPaciente.setText("Histórico Paciente");
+        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel1.setLayout(null);
 
-        jLabelBuscarPaciente_HistoricoPaciente.setText("Buscar Paciente");
+        jLabelBuscarPaciente_HistoricoPaciente.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabelBuscarPaciente_HistoricoPaciente.setText("Nome Paciente:");
+        jPanel1.add(jLabelBuscarPaciente_HistoricoPaciente);
+        jLabelBuscarPaciente_HistoricoPaciente.setBounds(10, 40, 87, 15);
+        jPanel1.add(jTextFieldBuscarPaciente_HistoricoPaciente);
+        jTextFieldBuscarPaciente_HistoricoPaciente.setBounds(115, 40, 440, 20);
 
+        jButtonBusca_HistoricoPaciente.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButtonBusca_HistoricoPaciente.setText("Buscar");
+        jPanel1.add(jButtonBusca_HistoricoPaciente);
+        jButtonBusca_HistoricoPaciente.setBounds(560, 30, 67, 27);
 
-        jLabelHistorico_HistoricoPaciente.setText("Histórico");
+        jLabelHistorico_HistoricoPaciente.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabelHistorico_HistoricoPaciente.setText("Histórico:");
+        jPanel1.add(jLabelHistorico_HistoricoPaciente);
+        jLabelHistorico_HistoricoPaciente.setBounds(20, 80, 80, 20);
+        jPanel1.add(jTextFieldHistorico_HistoricoPaciente);
+        jTextFieldHistorico_HistoricoPaciente.setBounds(10, 110, 630, 230);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(305, 305, 305)
-                        .addComponent(jLabelTelaDeHistorico_HistoricoPaciente))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabelHistorico_HistoricoPaciente)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jTextFieldHistorico_HistoricoPaciente)
-                        .addContainerGap())
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabelBuscarPaciente_HistoricoPaciente)
-                        .addGap(6, 6, 6)
-                        .addComponent(jTextFieldBuscarPaciente_HistoricoPaciente, javax.swing.GroupLayout.PREFERRED_SIZE, 465, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(3, 3, 3)
-                        .addComponent(jButtonBusca_HistoricoPaciente)
-                        .addGap(0, 58, Short.MAX_VALUE))))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabelTelaDeHistorico_HistoricoPaciente)
-                .addGap(29, 29, 29)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelBuscarPaciente_HistoricoPaciente)
-                    .addComponent(jTextFieldBuscarPaciente_HistoricoPaciente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonBusca_HistoricoPaciente, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jLabelHistorico_HistoricoPaciente)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextFieldHistorico_HistoricoPaciente, javax.swing.GroupLayout.DEFAULT_SIZE, 363, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButton1.setText("Voltar");
+        jPanel1.add(jButton1);
+        jButton1.setBounds(530, 360, 65, 23);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(10, 63, 683, 390);
+
+        jLabelTelaDeHistorico_HistoricoPaciente.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabelTelaDeHistorico_HistoricoPaciente.setText("Histórico Paciente");
+        getContentPane().add(jLabelTelaDeHistorico_HistoricoPaciente);
+        jLabelTelaDeHistorico_HistoricoPaciente.setBounds(280, 10, 150, 22);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -145,6 +115,7 @@ public class TelaDeHistoricoPaciente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButtonBusca_HistoricoPaciente;
     private javax.swing.JLabel jLabelBuscarPaciente_HistoricoPaciente;
     private javax.swing.JLabel jLabelHistorico_HistoricoPaciente;

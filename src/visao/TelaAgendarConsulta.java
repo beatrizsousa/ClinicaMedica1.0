@@ -40,10 +40,15 @@ public class TelaAgendarConsulta extends javax.swing.JFrame {
 
         jPanel1.setMinimumSize(new java.awt.Dimension(740, 400));
         jPanel1.setPreferredSize(new java.awt.Dimension(740, 400));
+        jPanel1.setLayout(null);
 
         jLabel1.setText("Agendar Consulta");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(303, 21, 150, 31);
 
         jLabelEspecialidade_AgendarConsulta.setText("Especialidade");
+        jPanel1.add(jLabelEspecialidade_AgendarConsulta);
+        jLabelEspecialidade_AgendarConsulta.setBounds(167, 135, 64, 14);
 
         jComboBoxSelecaoEspecialidade_AgendarConsulta.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione", "Alergia e Imunologia", "Cardiologia", "Clinico Geral", "Dermatologia", "Gastroenterologia", "Geriatria", "Genecologia", "Mastologia", "Nefrologia", "Neurologia", "Obstetrícia", "Ortopedia e Traumatoligia", "Otorrinolaringologia", "Pediatria", "Pscicologia", "Psiquiatria" }));
         jComboBoxSelecaoEspecialidade_AgendarConsulta.addActionListener(new java.awt.event.ActionListener() {
@@ -51,57 +56,24 @@ public class TelaAgendarConsulta extends javax.swing.JFrame {
                 jComboBoxSelecaoEspecialidade_AgendarConsultaActionPerformed(evt);
             }
         });
+        jPanel1.add(jComboBoxSelecaoEspecialidade_AgendarConsulta);
+        jComboBoxSelecaoEspecialidade_AgendarConsulta.setBounds(234, 132, 112, 20);
 
         jLabel2.setText("Nome do Médico");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(431, 135, 78, 14);
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione" }));
+        jPanel1.add(jComboBox1);
+        jComboBox1.setBounds(513, 132, 152, 20);
 
         jButton1.setText("Próximo");
+        jPanel1.add(jButton1);
+        jButton1.setBounds(554, 399, 71, 23);
 
         jButton2.setText("Cancelar");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(89, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton1)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton2)
-                        .addGap(24, 24, 24))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabelEspecialidade_AgendarConsulta)
-                        .addGap(3, 3, 3)
-                        .addComponent(jComboBoxSelecaoEspecialidade_AgendarConsulta, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(85, 85, 85)
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(77, 77, 77))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(289, 289, 289))))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(80, 80, 80)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2)
-                    .addComponent(jComboBoxSelecaoEspecialidade_AgendarConsulta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelEspecialidade_AgendarConsulta))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 233, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
-                .addContainerGap())
-        );
+        jPanel1.add(jButton2);
+        jButton2.setBounds(643, 399, 75, 23);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
