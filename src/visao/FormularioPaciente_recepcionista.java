@@ -5,6 +5,14 @@
  */
 package visao;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+import modelo.DaoPaciente;
+import modelo.Paciente;
+import modelo.Pessoa;
+
+
 /**
  *
  * @author dell
@@ -32,7 +40,7 @@ public class FormularioPaciente_recepcionista extends javax.swing.JFrame {
         jLabelNome_FormularioPaciente = new javax.swing.JLabel();
         jTextFieldNome_FormularioPaciente = new javax.swing.JTextField();
         jLabelRua_FormularioPaciente = new javax.swing.JLabel();
-        jTextFieldCPF_CadPaciente = new javax.swing.JTextField();
+        jTextFieldCPF_FormularioPaciente = new javax.swing.JTextField();
         jLabelCPF_FormularioPaciente = new javax.swing.JLabel();
         jTextFieldRua_FormularioPaciente = new javax.swing.JTextField();
         jLabelDataNascimento_FormularioPaciente = new javax.swing.JLabel();
@@ -93,8 +101,8 @@ public class FormularioPaciente_recepcionista extends javax.swing.JFrame {
         jLabelRua_FormularioPaciente.setText("Rua");
         jPanel1.add(jLabelRua_FormularioPaciente);
         jLabelRua_FormularioPaciente.setBounds(20, 240, 70, 30);
-        jPanel1.add(jTextFieldCPF_CadPaciente);
-        jTextFieldCPF_CadPaciente.setBounds(20, 90, 210, 30);
+        jPanel1.add(jTextFieldCPF_FormularioPaciente);
+        jTextFieldCPF_FormularioPaciente.setBounds(20, 90, 210, 30);
 
         jLabelCPF_FormularioPaciente.setText("CPF");
         jPanel1.add(jLabelCPF_FormularioPaciente);
@@ -196,10 +204,20 @@ public class FormularioPaciente_recepcionista extends javax.swing.JFrame {
         jComboBoxEstado_FormularioPaciente.setBounds(220, 330, 150, 30);
 
         jButtonSalvar_FormularioPaciente.setText("Salvar");
+        jButtonSalvar_FormularioPaciente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSalvar_FormularioPacienteActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButtonSalvar_FormularioPaciente);
         jButtonSalvar_FormularioPaciente.setBounds(692, 470, 90, 30);
 
         jButtonCancelar_FormularioPaciente.setText("Cancelar");
+        jButtonCancelar_FormularioPaciente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCancelar_FormularioPacienteActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButtonCancelar_FormularioPaciente);
         jButtonCancelar_FormularioPaciente.setBounds(470, 470, 100, 30);
         jPanel1.add(jTextFieldSUS_FormularioPaciente);
@@ -238,6 +256,20 @@ public class FormularioPaciente_recepcionista extends javax.swing.JFrame {
     private void jButtonLimpar_FormularioPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLimpar_FormularioPacienteActionPerformed
 
     jTextFieldNome_FormularioPaciente.setText("");
+    jTextFieldCPF_FormularioPaciente.setText("");
+    jTextFieldRua_FormularioPaciente.setText("");
+    jTextFieldDataNascimento_FormularioPaciente.setText("");
+    jTextFieldSUS_FormularioPaciente.setText("");
+    jTextFieldNomeMae_FormularioPaciente.setText("");
+    jTextFieldNomePai_FormularioPaciente.setText("");
+    jTextFieldProfissao_FormularioPaciente.setText("");
+    jTextFieldNumero_FormularioPaciente.setText("");
+    jTextFieldBairro_FormularioPaciente.setText("");
+    jTextFieldCidade_FormularioPaciente.setText("");
+    jTextFieldCEP_FormularioPaciente.setText("");
+    jTextFieldTelefone_FormularioPaciente.setText("");
+    jTextFieldObservacao_FormularioPaciente.setText("");
+    
    
 
     }//GEN-LAST:event_jButtonLimpar_FormularioPacienteActionPerformed
@@ -245,6 +277,67 @@ public class FormularioPaciente_recepcionista extends javax.swing.JFrame {
     private void jTextFieldNome_FormularioPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldNome_FormularioPacienteActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldNome_FormularioPacienteActionPerformed
+
+    private void jButtonSalvar_FormularioPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSalvar_FormularioPacienteActionPerformed
+        
+        Paciente pac = new Paciente();
+        DaoPaciente daopaciente = new DaoPaciente();
+       
+        
+        if(!jTextFieldBairro_FormularioPaciente.getText().isEmpty() 
+                || !jTextFieldCEP_FormularioPaciente.getText().isEmpty() 
+                || !jTextFieldCPF_FormularioPaciente.getText().isEmpty() 
+                || !jTextFieldCidade_FormularioPaciente.getText().isEmpty() 
+                || !jTextFieldDataNascimento_FormularioPaciente.getText().isEmpty() 
+                || !jTextFieldNomeMae_FormularioPaciente.getText().isEmpty() 
+                || !jTextFieldNomePai_FormularioPaciente.getText().isEmpty() 
+                || !jTextFieldNome_FormularioPaciente.getText().isEmpty() 
+                || !jTextFieldObservacao_FormularioPaciente.getText().isEmpty()
+                || !jTextFieldNumero_FormularioPaciente.getText().isEmpty() 
+                || !jTextFieldProfissao_FormularioPaciente.getText().isEmpty() 
+                || jComboBoxEstado_FormularioPaciente.getSelectedItem() != null
+                || jComboBoxEstadoCivil_FormularioPaciente.getSelectedItem() != null
+                || jComboBoxSexo_FormularioPaciente.getSelectedItem() != null
+                || !jTextFieldTelefone_FormularioPaciente.getText().isEmpty()
+                || !jTextFieldSUS_FormularioPaciente.getText().isEmpty() ) {
+            
+           pac.setNome(jTextFieldBairro_FormularioPaciente.getText());
+           pac.setSexo(jComboBoxSexo_FormularioPaciente.getSelectedItem().toString());
+           pac.setCpf(jTextFieldCPF_FormularioPaciente.getText());
+            pac.setNascimento(jTextFieldDataNascimento_FormularioPaciente.getText());
+            pac.setTelefone(jTextFieldTelefone_FormularioPaciente.getText());
+            pac.setProfissao(jTextFieldProfissao_FormularioPaciente.getText());
+            pac.setSus(jTextFieldSUS_FormularioPaciente.getText());
+            pac.setEstadoCivil(jComboBoxEstadoCivil_FormularioPaciente.getSelectedItem().toString());
+            pac.setPai(jTextFieldNomePai_FormularioPaciente.getText());
+            pac.setMae(jTextFieldNomeMae_FormularioPaciente.getText());
+            pac.setRua(jTextFieldRua_FormularioPaciente.getText());
+            pac.setCidade(jTextFieldCidade_FormularioPaciente.getText());
+            pac.setCep(jTextFieldCEP_FormularioPaciente.getText());
+            pac.setEstado(jComboBoxEstado_FormularioPaciente.getSelectedItem().toString());
+            pac.setBairro(jTextFieldBairro_FormularioPaciente.getText());
+            pac.setNumero(jTextFieldNumero_FormularioPaciente.getText());
+            pac.setObservacao(jTextFieldObservacao_FormularioPaciente.getText());
+            try {
+                daopaciente.adicionaPaciente(pac);
+            } catch (ClassNotFoundException ex) {
+                Logger.getLogger(FormularioPaciente_recepcionista.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            
+            
+         dispose();
+        PrincipalAdm.main(null);
+        } else {
+            JOptionPane.showMessageDialog(rootPane, "Preencha todos os campos");
+        }
+    }//GEN-LAST:event_jButtonSalvar_FormularioPacienteActionPerformed
+
+    private void jButtonCancelar_FormularioPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelar_FormularioPacienteActionPerformed
+         PrincipalRecepcionista prin = new PrincipalRecepcionista();
+    prin.setVisible(true);
+      dispose(); 
+      
+    }//GEN-LAST:event_jButtonCancelar_FormularioPacienteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -310,7 +403,7 @@ public class FormularioPaciente_recepcionista extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextFieldBairro_FormularioPaciente;
     private javax.swing.JTextField jTextFieldCEP_FormularioPaciente;
-    private javax.swing.JTextField jTextFieldCPF_CadPaciente;
+    private javax.swing.JTextField jTextFieldCPF_FormularioPaciente;
     private javax.swing.JTextField jTextFieldCidade_FormularioPaciente;
     private javax.swing.JTextField jTextFieldDataNascimento_FormularioPaciente;
     private javax.swing.JTextField jTextFieldNomeMae_FormularioPaciente;

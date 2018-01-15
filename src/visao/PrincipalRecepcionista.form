@@ -42,6 +42,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/imagens/AgendarConsulta.png"/>
             </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Agendar Consulta"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonAgendarConsulta_PrincipalRecepcionistaActionPerformed"/>
@@ -57,6 +58,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/imagens/EmitirRelatorio.png"/>
             </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Emitir Relat&#xf3;rios"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -69,6 +71,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/imagens/CadPaciente.png"/>
             </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Cadastrar Pacientes"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonCadastroPaciente_PrincipalRecepcionistaActionPerformed"/>

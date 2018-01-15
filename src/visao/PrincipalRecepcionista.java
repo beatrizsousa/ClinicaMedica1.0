@@ -43,6 +43,7 @@ public class PrincipalRecepcionista extends javax.swing.JFrame {
         jPanelPrincipalRecepcionista.setLayout(null);
 
         jButtonAgendarConsulta_PrincipalRecepcionista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/AgendarConsulta.png"))); // NOI18N
+        jButtonAgendarConsulta_PrincipalRecepcionista.setToolTipText("Agendar Consulta");
         jButtonAgendarConsulta_PrincipalRecepcionista.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonAgendarConsulta_PrincipalRecepcionistaActionPerformed(evt);
@@ -52,10 +53,12 @@ public class PrincipalRecepcionista extends javax.swing.JFrame {
         jButtonAgendarConsulta_PrincipalRecepcionista.setBounds(200, 30, 77, 70);
 
         jButtonEmitirRelatorio_PrincipalRecepcionista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/EmitirRelatorio.png"))); // NOI18N
+        jButtonEmitirRelatorio_PrincipalRecepcionista.setToolTipText("Emitir Relatórios");
         jPanelPrincipalRecepcionista.add(jButtonEmitirRelatorio_PrincipalRecepcionista);
         jButtonEmitirRelatorio_PrincipalRecepcionista.setBounds(160, 110, 73, 70);
 
         jButtonCadastroPaciente_PrincipalRecepcionista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/CadPaciente.png"))); // NOI18N
+        jButtonCadastroPaciente_PrincipalRecepcionista.setToolTipText("Cadastrar Pacientes");
         jButtonCadastroPaciente_PrincipalRecepcionista.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonCadastroPaciente_PrincipalRecepcionistaActionPerformed(evt);
@@ -104,7 +107,9 @@ public class PrincipalRecepcionista extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonCadastroPaciente_PrincipalRecepcionistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCadastroPaciente_PrincipalRecepcionistaActionPerformed
-       
+       FormularioPaciente_recepcionista ff = new FormularioPaciente_recepcionista();
+       ff.setVisible(true);
+       dispose(); 
     }//GEN-LAST:event_jButtonCadastroPaciente_PrincipalRecepcionistaActionPerformed
 
     private void jButtonAgendarConsulta_PrincipalRecepcionistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAgendarConsulta_PrincipalRecepcionistaActionPerformed
