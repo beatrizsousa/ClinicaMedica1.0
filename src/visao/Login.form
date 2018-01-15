@@ -116,7 +116,7 @@
     <Component class="javax.swing.JLabel" name="jLabelFundoLogin">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/imagens/2e8dd494ade012aa9bcb62519744b4a9.jpg"/>
+          <Image iconType="3" name="/imagens/fundo.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabelFundoLogin"/>
       </Properties>

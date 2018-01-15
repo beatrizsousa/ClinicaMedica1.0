@@ -27,35 +27,36 @@ public class PrincipalRecepcionista extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jButtonAlterarSenha_PrincipalRecepcionista = new javax.swing.JButton();
         jPanelPrincipalRecepcionista = new javax.swing.JPanel();
-        jButtonAgendarConsulta_PrincipalRecepcionista = new javax.swing.JButton();
         jButtonEmitirRelatorio_PrincipalRecepcionista = new javax.swing.JButton();
         jButtonCadastroPaciente_PrincipalRecepcionista = new javax.swing.JButton();
+        jButtonAgendarConsulta_PrincipalRecepcionista = new javax.swing.JButton();
         jButtonSair_PrincipalRecepcionista = new javax.swing.JButton();
-        jButtonAlterarSenha_PrincipalRecepcionista = new javax.swing.JButton();
         jLabelBemVindo_PrincipalRecepcionista = new javax.swing.JLabel();
         jLabelGabiruLogo = new javax.swing.JLabel();
+        jLabelSaudeSystemLogo = new javax.swing.JLabel();
         jLabelFundoAzul = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jPanelPrincipalRecepcionista.setLayout(null);
-
-        jButtonAgendarConsulta_PrincipalRecepcionista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/AgendarConsulta.png"))); // NOI18N
-        jButtonAgendarConsulta_PrincipalRecepcionista.setToolTipText("Agendar Consulta");
-        jButtonAgendarConsulta_PrincipalRecepcionista.addActionListener(new java.awt.event.ActionListener() {
+        jButtonAlterarSenha_PrincipalRecepcionista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/chave.png"))); // NOI18N
+        jButtonAlterarSenha_PrincipalRecepcionista.setToolTipText("Alterar Senha");
+        jButtonAlterarSenha_PrincipalRecepcionista.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonAgendarConsulta_PrincipalRecepcionistaActionPerformed(evt);
+                jButtonAlterarSenha_PrincipalRecepcionistaActionPerformed(evt);
             }
         });
-        jPanelPrincipalRecepcionista.add(jButtonAgendarConsulta_PrincipalRecepcionista);
-        jButtonAgendarConsulta_PrincipalRecepcionista.setBounds(200, 30, 77, 70);
+        getContentPane().add(jButtonAlterarSenha_PrincipalRecepcionista);
+        jButtonAlterarSenha_PrincipalRecepcionista.setBounds(410, 10, 40, 40);
+
+        jPanelPrincipalRecepcionista.setLayout(null);
 
         jButtonEmitirRelatorio_PrincipalRecepcionista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/EmitirRelatorio.png"))); // NOI18N
         jButtonEmitirRelatorio_PrincipalRecepcionista.setToolTipText("Emitir Relatórios");
         jPanelPrincipalRecepcionista.add(jButtonEmitirRelatorio_PrincipalRecepcionista);
-        jButtonEmitirRelatorio_PrincipalRecepcionista.setBounds(160, 110, 73, 70);
+        jButtonEmitirRelatorio_PrincipalRecepcionista.setBounds(340, 80, 73, 70);
 
         jButtonCadastroPaciente_PrincipalRecepcionista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/CadPaciente.png"))); // NOI18N
         jButtonCadastroPaciente_PrincipalRecepcionista.setToolTipText("Cadastrar Pacientes");
@@ -65,7 +66,17 @@ public class PrincipalRecepcionista extends javax.swing.JFrame {
             }
         });
         jPanelPrincipalRecepcionista.add(jButtonCadastroPaciente_PrincipalRecepcionista);
-        jButtonCadastroPaciente_PrincipalRecepcionista.setBounds(110, 30, 70, 70);
+        jButtonCadastroPaciente_PrincipalRecepcionista.setBounds(40, 80, 70, 70);
+
+        jButtonAgendarConsulta_PrincipalRecepcionista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/AgendarConsulta.png"))); // NOI18N
+        jButtonAgendarConsulta_PrincipalRecepcionista.setToolTipText("Agendar Consulta");
+        jButtonAgendarConsulta_PrincipalRecepcionista.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonAgendarConsulta_PrincipalRecepcionistaActionPerformed(evt);
+            }
+        });
+        jPanelPrincipalRecepcionista.add(jButtonAgendarConsulta_PrincipalRecepcionista);
+        jButtonAgendarConsulta_PrincipalRecepcionista.setBounds(190, 80, 77, 70);
 
         jButtonSair_PrincipalRecepcionista.setText("Sair");
         jButtonSair_PrincipalRecepcionista.addActionListener(new java.awt.event.ActionListener() {
@@ -74,35 +85,30 @@ public class PrincipalRecepcionista extends javax.swing.JFrame {
             }
         });
         jPanelPrincipalRecepcionista.add(jButtonSair_PrincipalRecepcionista);
-        jButtonSair_PrincipalRecepcionista.setBounds(300, 210, 70, 30);
-
-        jButtonAlterarSenha_PrincipalRecepcionista.setText("Alterar Senha");
-        jButtonAlterarSenha_PrincipalRecepcionista.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonAlterarSenha_PrincipalRecepcionistaActionPerformed(evt);
-            }
-        });
-        jPanelPrincipalRecepcionista.add(jButtonAlterarSenha_PrincipalRecepcionista);
-        jButtonAlterarSenha_PrincipalRecepcionista.setBounds(180, 210, 110, 30);
-
-        getContentPane().add(jPanelPrincipalRecepcionista);
-        jPanelPrincipalRecepcionista.setBounds(10, 40, 380, 250);
+        jButtonSair_PrincipalRecepcionista.setBounds(360, 190, 70, 30);
 
         jLabelBemVindo_PrincipalRecepcionista.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabelBemVindo_PrincipalRecepcionista.setText("Bem-Vindo, ");
-        getContentPane().add(jLabelBemVindo_PrincipalRecepcionista);
-        jLabelBemVindo_PrincipalRecepcionista.setBounds(20, 0, 150, 40);
+        jPanelPrincipalRecepcionista.add(jLabelBemVindo_PrincipalRecepcionista);
+        jLabelBemVindo_PrincipalRecepcionista.setBounds(10, 10, 150, 40);
 
         jLabelGabiruLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/RAT7.png"))); // NOI18N
         jLabelGabiruLogo.setToolTipText("Gabiru");
-        getContentPane().add(jLabelGabiruLogo);
-        jLabelGabiruLogo.setBounds(360, 0, 30, 40);
+        jPanelPrincipalRecepcionista.add(jLabelGabiruLogo);
+        jLabelGabiruLogo.setBounds(0, 190, 30, 40);
 
-        jLabelFundoAzul.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/2e8dd494ade012aa9bcb62519744b4a9.jpg"))); // NOI18N
+        getContentPane().add(jPanelPrincipalRecepcionista);
+        jPanelPrincipalRecepcionista.setBounds(10, 60, 440, 230);
+
+        jLabelSaudeSystemLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/MENOR PRINCIPAL.png"))); // NOI18N
+        getContentPane().add(jLabelSaudeSystemLogo);
+        jLabelSaudeSystemLogo.setBounds(10, 0, 80, 60);
+
+        jLabelFundoAzul.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fundo.png"))); // NOI18N
         getContentPane().add(jLabelFundoAzul);
-        jLabelFundoAzul.setBounds(0, 0, 400, 300);
+        jLabelFundoAzul.setBounds(-20, -10, 480, 330);
 
-        setSize(new java.awt.Dimension(416, 339));
+        setSize(new java.awt.Dimension(474, 339));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -174,6 +180,7 @@ public class PrincipalRecepcionista extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelBemVindo_PrincipalRecepcionista;
     private javax.swing.JLabel jLabelFundoAzul;
     private javax.swing.JLabel jLabelGabiruLogo;
+    private javax.swing.JLabel jLabelSaudeSystemLogo;
     private javax.swing.JPanel jPanelPrincipalRecepcionista;
     // End of variables declaration//GEN-END:variables
 }

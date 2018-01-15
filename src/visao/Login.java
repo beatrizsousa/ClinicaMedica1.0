@@ -86,7 +86,7 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(jLabel1);
         jLabel1.setBounds(10, 264, 60, 30);
 
-        jLabelFundoLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/2e8dd494ade012aa9bcb62519744b4a9.jpg"))); // NOI18N
+        jLabelFundoLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fundo.png"))); // NOI18N
         jLabelFundoLogin.setText("jLabelFundoLogin");
         getContentPane().add(jLabelFundoLogin);
         jLabelFundoLogin.setBounds(-40, 0, 570, 300);
