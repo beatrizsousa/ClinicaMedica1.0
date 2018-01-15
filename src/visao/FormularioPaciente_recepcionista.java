@@ -210,7 +210,7 @@ public class FormularioPaciente_recepcionista extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButtonSalvar_FormularioPaciente);
-        jButtonSalvar_FormularioPaciente.setBounds(692, 470, 90, 30);
+        jButtonSalvar_FormularioPaciente.setBounds(470, 470, 90, 30);
 
         jButtonCancelar_FormularioPaciente.setText("Cancelar");
         jButtonCancelar_FormularioPaciente.addActionListener(new java.awt.event.ActionListener() {
@@ -219,7 +219,7 @@ public class FormularioPaciente_recepcionista extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButtonCancelar_FormularioPaciente);
-        jButtonCancelar_FormularioPaciente.setBounds(470, 470, 100, 30);
+        jButtonCancelar_FormularioPaciente.setBounds(680, 470, 100, 30);
         jPanel1.add(jTextFieldSUS_FormularioPaciente);
         jTextFieldSUS_FormularioPaciente.setBounds(280, 150, 210, 30);
         jPanel1.add(jTextFieldNumero_FormularioPaciente);
@@ -236,7 +236,7 @@ public class FormularioPaciente_recepcionista extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButtonLimpar_FormularioPaciente);
-        jButtonLimpar_FormularioPaciente.setBounds(580, 470, 100, 30);
+        jButtonLimpar_FormularioPaciente.setBounds(570, 470, 100, 30);
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(10, 40, 800, 520);

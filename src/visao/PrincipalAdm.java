@@ -30,214 +30,102 @@ public class PrincipalAdm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jInternalFrameBemVindo = new javax.swing.JInternalFrame();
-        jPanelDoInternalFrame = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jButtonAgendaDoBemVindo = new javax.swing.JButton();
-        jButtonEnfermeiroDoBemVindo = new javax.swing.JButton();
-        jButtonMedicoDoBemVindo = new javax.swing.JButton();
-        jButtonPacienteDoBemVindo = new javax.swing.JButton();
-        jLabelDoInternalFrame = new javax.swing.JLabel();
-        jButtonSairDoInternalFrame = new javax.swing.JButton();
-        jLabelFundoTelaPrincipal = new javax.swing.JLabel();
+        jButtonAlterarSenha_PrincipalRecepcionista = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jButtonEnfermeiro_PrincipalAdm = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jLabelGabiruLogo_PrincipalAdm = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jButtonAlterarSenha_PrincipalRecepcionista1 = new javax.swing.JButton();
+        jButtonSair_PrincipalAdm = new javax.swing.JButton();
+        jLabelFundoPrincipalAdm = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenuCadastro = new javax.swing.JMenu();
-        jMenuItemCadMedico = new javax.swing.JMenuItem();
-        jMenuItemCadPacientes = new javax.swing.JMenuItem();
-        jMenuItemCadEnfermeiros = new javax.swing.JMenuItem();
-        jMenuItemCadUsuarios = new javax.swing.JMenuItem();
-        jMenuRelatorios = new javax.swing.JMenu();
-        Ferramentas = new javax.swing.JMenu();
-        jMenuItemTelaBemVindo = new javax.swing.JMenuItem();
-        jMenu1 = new javax.swing.JMenu();
-        jMenuItemSair = new javax.swing.JMenuItem();
+
+        jButtonAlterarSenha_PrincipalRecepcionista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/chave.png"))); // NOI18N
+        jButtonAlterarSenha_PrincipalRecepcionista.setToolTipText("Alterar Senha");
+        jButtonAlterarSenha_PrincipalRecepcionista.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonAlterarSenha_PrincipalRecepcionistaActionPerformed(evt);
+            }
+        });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jInternalFrameBemVindo.setTitle("Bem-Vindo");
-        jInternalFrameBemVindo.setVisible(true);
-        jInternalFrameBemVindo.getContentPane().setLayout(null);
+        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel1.setLayout(null);
 
-        jPanelDoInternalFrame.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanelDoInternalFrame.setLayout(null);
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/medico.png"))); // NOI18N
+        jButton1.setToolTipText("Cadastro de Médicos");
+        jPanel1.add(jButton1);
+        jButton1.setBounds(310, 80, 60, 60);
 
-        jLabel2.setText("Cadastros - ");
-        jPanelDoInternalFrame.add(jLabel2);
-        jLabel2.setBounds(10, 20, 100, 14);
-
-        jButtonAgendaDoBemVindo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/agenda.png"))); // NOI18N
-        jButtonAgendaDoBemVindo.setToolTipText("Agenda");
-        jPanelDoInternalFrame.add(jButtonAgendaDoBemVindo);
-        jButtonAgendaDoBemVindo.setBounds(360, 150, 90, 80);
-
-        jButtonEnfermeiroDoBemVindo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/enfermeiro.png"))); // NOI18N
-        jButtonEnfermeiroDoBemVindo.setToolTipText("Cadastro de Enfermeiros");
-        jButtonEnfermeiroDoBemVindo.addActionListener(new java.awt.event.ActionListener() {
+        jButtonEnfermeiro_PrincipalAdm.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/enfermeiro222.png"))); // NOI18N
+        jButtonEnfermeiro_PrincipalAdm.setToolTipText("Cadastro de Enfermeiros");
+        jButtonEnfermeiro_PrincipalAdm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonEnfermeiroDoBemVindoActionPerformed(evt);
+                jButtonEnfermeiro_PrincipalAdmActionPerformed(evt);
             }
         });
-        jPanelDoInternalFrame.add(jButtonEnfermeiroDoBemVindo);
-        jButtonEnfermeiroDoBemVindo.setBounds(260, 150, 90, 80);
+        jPanel1.add(jButtonEnfermeiro_PrincipalAdm);
+        jButtonEnfermeiro_PrincipalAdm.setBounds(100, 80, 60, 60);
 
-        jButtonMedicoDoBemVindo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/medico.png"))); // NOI18N
-        jButtonMedicoDoBemVindo.setToolTipText("Cadastro de Médicos");
-        jButtonMedicoDoBemVindo.addActionListener(new java.awt.event.ActionListener() {
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/paciente.png"))); // NOI18N
+        jPanel1.add(jButton2);
+        jButton2.setBounds(530, 80, 60, 60);
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(10, 110, 670, 220);
+
+        jLabelGabiruLogo_PrincipalAdm.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/RAT7.png"))); // NOI18N
+        jLabelGabiruLogo_PrincipalAdm.setToolTipText("Gabiru");
+        getContentPane().add(jLabelGabiruLogo_PrincipalAdm);
+        jLabelGabiruLogo_PrincipalAdm.setBounds(650, 0, 30, 40);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel1.setText("ADM");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(10, 10, 60, 20);
+
+        jButtonAlterarSenha_PrincipalRecepcionista1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/chave.png"))); // NOI18N
+        jButtonAlterarSenha_PrincipalRecepcionista1.setToolTipText("Alterar Senha");
+        jButtonAlterarSenha_PrincipalRecepcionista1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonMedicoDoBemVindoActionPerformed(evt);
+                jButtonAlterarSenha_PrincipalRecepcionista1ActionPerformed(evt);
             }
         });
-        jPanelDoInternalFrame.add(jButtonMedicoDoBemVindo);
-        jButtonMedicoDoBemVindo.setBounds(360, 60, 90, 80);
+        getContentPane().add(jButtonAlterarSenha_PrincipalRecepcionista1);
+        jButtonAlterarSenha_PrincipalRecepcionista1.setBounds(20, 370, 40, 40);
 
-        jButtonPacienteDoBemVindo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/usuario.png"))); // NOI18N
-        jButtonPacienteDoBemVindo.setToolTipText("Cadastro de Pacientes");
-        jButtonPacienteDoBemVindo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButtonPacienteDoBemVindo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonPacienteDoBemVindoActionPerformed(evt);
-            }
-        });
-        jPanelDoInternalFrame.add(jButtonPacienteDoBemVindo);
-        jButtonPacienteDoBemVindo.setBounds(260, 60, 90, 80);
+        jButtonSair_PrincipalAdm.setText("Sair");
+        getContentPane().add(jButtonSair_PrincipalAdm);
+        jButtonSair_PrincipalAdm.setBounds(610, 380, 70, 30);
 
-        jInternalFrameBemVindo.getContentPane().add(jPanelDoInternalFrame);
-        jPanelDoInternalFrame.setBounds(0, 50, 730, 340);
-
-        jLabelDoInternalFrame.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabelDoInternalFrame.setText("Sistema de Gerenciamento de:");
-        jInternalFrameBemVindo.getContentPane().add(jLabelDoInternalFrame);
-        jLabelDoInternalFrame.setBounds(10, -20, 250, 90);
-
-        jButtonSairDoInternalFrame.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fechar.png"))); // NOI18N
-        jButtonSairDoInternalFrame.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonSairDoInternalFrameActionPerformed(evt);
-            }
-        });
-        jInternalFrameBemVindo.getContentPane().add(jButtonSairDoInternalFrame);
-        jButtonSairDoInternalFrame.setBounds(660, 0, 60, 50);
-
-        getContentPane().add(jInternalFrameBemVindo);
-        jInternalFrameBemVindo.setBounds(0, 40, 750, 420);
-
-        jLabelFundoTelaPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/ae.jpg"))); // NOI18N
-        getContentPane().add(jLabelFundoTelaPrincipal);
-        jLabelFundoTelaPrincipal.setBounds(0, 0, 750, 470);
-
-        jMenuCadastro.setText("Cadastro");
-
-        jMenuItemCadMedico.setText("Medicos");
-        jMenuItemCadMedico.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItemCadMedicoActionPerformed(evt);
-            }
-        });
-        jMenuCadastro.add(jMenuItemCadMedico);
-
-        jMenuItemCadPacientes.setText("Pacientes");
-        jMenuItemCadPacientes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItemCadPacientesActionPerformed(evt);
-            }
-        });
-        jMenuCadastro.add(jMenuItemCadPacientes);
-
-        jMenuItemCadEnfermeiros.setText("Enfermeiros");
-        jMenuItemCadEnfermeiros.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItemCadEnfermeirosActionPerformed(evt);
-            }
-        });
-        jMenuCadastro.add(jMenuItemCadEnfermeiros);
-
-        jMenuItemCadUsuarios.setText("Usuarios");
-        jMenuCadastro.add(jMenuItemCadUsuarios);
-
-        jMenuBar1.add(jMenuCadastro);
-
-        jMenuRelatorios.setText("Relatorios");
-        jMenuBar1.add(jMenuRelatorios);
-
-        Ferramentas.setText("Ferramentas");
-
-        jMenuItemTelaBemVindo.setText("Tela Bem-Vindo");
-        jMenuItemTelaBemVindo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItemTelaBemVindoActionPerformed(evt);
-            }
-        });
-        Ferramentas.add(jMenuItemTelaBemVindo);
-
-        jMenuBar1.add(Ferramentas);
-
-        jMenu1.setText("Sair");
-
-        jMenuItemSair.setText("Sair");
-        jMenuItemSair.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItemSairActionPerformed(evt);
-            }
-        });
-        jMenu1.add(jMenuItemSair);
-
-        jMenuBar1.add(jMenu1);
-
+        jLabelFundoPrincipalAdm.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/agora.png"))); // NOI18N
+        getContentPane().add(jLabelFundoPrincipalAdm);
+        jLabelFundoPrincipalAdm.setBounds(0, 0, 690, 420);
         setJMenuBar(jMenuBar1);
 
-        setSize(new java.awt.Dimension(769, 526));
+        setSize(new java.awt.Dimension(708, 459));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItemTelaBemVindoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemTelaBemVindoActionPerformed
-       PrincipalAdm tela = new PrincipalAdm();
-       tela.setVisible(true);
-       dispose();
-    }//GEN-LAST:event_jMenuItemTelaBemVindoActionPerformed
-
-    private void jButtonSairDoInternalFrameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSairDoInternalFrameActionPerformed
-       jInternalFrameBemVindo.dispose();
-    }//GEN-LAST:event_jButtonSairDoInternalFrameActionPerformed
-
-    private void jMenuItemSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemSairActionPerformed
-       //conecta.desconecta();
-        System.exit(0);
-    }//GEN-LAST:event_jMenuItemSairActionPerformed
-
-    private void jButtonMedicoDoBemVindoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMedicoDoBemVindoActionPerformed
-        FormularioMedico form = new FormularioMedico();
-        form.setVisible(true);
+    private void jButtonAlterarSenha_PrincipalRecepcionistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAlterarSenha_PrincipalRecepcionistaActionPerformed
+        AlterarSenha_recepcionista altsenha = new AlterarSenha_recepcionista();
+        altsenha.setVisible(true);
         dispose();
-    }//GEN-LAST:event_jButtonMedicoDoBemVindoActionPerformed
+    }//GEN-LAST:event_jButtonAlterarSenha_PrincipalRecepcionistaActionPerformed
 
-    private void jMenuItemCadMedicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadMedicoActionPerformed
-        FormularioMedico form = new FormularioMedico();
-        form.setVisible(true);
+    private void jButtonAlterarSenha_PrincipalRecepcionista1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAlterarSenha_PrincipalRecepcionista1ActionPerformed
+        
+    }//GEN-LAST:event_jButtonAlterarSenha_PrincipalRecepcionista1ActionPerformed
+
+    private void jButtonEnfermeiro_PrincipalAdmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEnfermeiro_PrincipalAdmActionPerformed
+    FormularioEnfermeiro formenf = new FormularioEnfermeiro();
+       formenf.setVisible(true);
         dispose();
-    }//GEN-LAST:event_jMenuItemCadMedicoActionPerformed
-
-    private void jButtonEnfermeiroDoBemVindoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEnfermeiroDoBemVindoActionPerformed
-        FormularioEnfermeiro form = new FormularioEnfermeiro();
-        form.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_jButtonEnfermeiroDoBemVindoActionPerformed
-
-    private void jMenuItemCadEnfermeirosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadEnfermeirosActionPerformed
-       FormularioEnfermeiro form_enf = new FormularioEnfermeiro();
-       form_enf.setVisible(true);
-       dispose();
-    }//GEN-LAST:event_jMenuItemCadEnfermeirosActionPerformed
-
-    private void jMenuItemCadPacientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadPacientesActionPerformed
-       FormularioPaciente_recepcionista form_pac = new FormularioPaciente_recepcionista();
-       form_pac.setVisible(true);
-       dispose();
-    }//GEN-LAST:event_jMenuItemCadPacientesActionPerformed
-
-    private void jButtonPacienteDoBemVindoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPacienteDoBemVindoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonPacienteDoBemVindoActionPerformed
+    }//GEN-LAST:event_jButtonEnfermeiro_PrincipalAdmActionPerformed
 
     /**
      * @param args the command line arguments
@@ -276,26 +164,16 @@ public class PrincipalAdm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu Ferramentas;
-    private javax.swing.JButton jButtonAgendaDoBemVindo;
-    private javax.swing.JButton jButtonEnfermeiroDoBemVindo;
-    private javax.swing.JButton jButtonMedicoDoBemVindo;
-    private javax.swing.JButton jButtonPacienteDoBemVindo;
-    private javax.swing.JButton jButtonSairDoInternalFrame;
-    private javax.swing.JInternalFrame jInternalFrameBemVindo;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabelDoInternalFrame;
-    private javax.swing.JLabel jLabelFundoTelaPrincipal;
-    private javax.swing.JMenu jMenu1;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButtonAlterarSenha_PrincipalRecepcionista;
+    private javax.swing.JButton jButtonAlterarSenha_PrincipalRecepcionista1;
+    private javax.swing.JButton jButtonEnfermeiro_PrincipalAdm;
+    private javax.swing.JButton jButtonSair_PrincipalAdm;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabelFundoPrincipalAdm;
+    private javax.swing.JLabel jLabelGabiruLogo_PrincipalAdm;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenu jMenuCadastro;
-    private javax.swing.JMenuItem jMenuItemCadEnfermeiros;
-    private javax.swing.JMenuItem jMenuItemCadMedico;
-    private javax.swing.JMenuItem jMenuItemCadPacientes;
-    private javax.swing.JMenuItem jMenuItemCadUsuarios;
-    private javax.swing.JMenuItem jMenuItemSair;
-    private javax.swing.JMenuItem jMenuItemTelaBemVindo;
-    private javax.swing.JMenu jMenuRelatorios;
-    private javax.swing.JPanel jPanelDoInternalFrame;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
