@@ -7,12 +7,12 @@ package visao;
 
 /**
  *
- * @author dell
+ * @author Anderson
  */
 public class PrincipalRecepcionista extends javax.swing.JFrame {
 
     /**
-     * Creates new form TelaPrincipalRecepcionista
+     * Creates new form PrincipalRecepcionista
      */
     public PrincipalRecepcionista() {
         initComponents();
@@ -27,95 +27,81 @@ public class PrincipalRecepcionista extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabelTela_PrincipalRecepcionista = new javax.swing.JLabel();
-        jPanelTelaPrincipalRecepcionista = new javax.swing.JPanel();
-        jButtonAgendarConsulta_TelaRecepcionista = new javax.swing.JButton();
-        jButtonEmitirRelatorio_TelaRecepcionista = new javax.swing.JButton();
-        jButtonCadPaciente_TelaRecepcionista = new javax.swing.JButton();
-        jButtonSairTelaPrincipalRecepcionista = new javax.swing.JButton();
-        jLabelLogoGabiru_TelaPrincipalRecepcionista = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        jPanelPrincipalRecepcionista = new javax.swing.JPanel();
+        jButtonAgendarConsulta_PrincipalRecepcionista = new javax.swing.JButton();
+        jButtonEmitirRelatorio_PrincipalRecepcionista = new javax.swing.JButton();
+        jButtonCadastroPaciente_PrincipalRecepcionista = new javax.swing.JButton();
+        jButtonSair_PrincipalRecepcionista = new javax.swing.JButton();
+        jButtonAlterarSenha_PrincipalRecepcionista = new javax.swing.JButton();
+        jLabelBemVindo_PrincipalRecepcionista = new javax.swing.JLabel();
+        jLabelGabiruLogo = new javax.swing.JLabel();
+        jLabelFundoAzul = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        getContentPane().setLayout(null);
 
-        jPanel1.setMinimumSize(new java.awt.Dimension(740, 400));
-        jPanel1.setPreferredSize(new java.awt.Dimension(740, 400));
-        jPanel1.setLayout(null);
+        jPanelPrincipalRecepcionista.setLayout(null);
 
-        jLabelTela_PrincipalRecepcionista.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabelTela_PrincipalRecepcionista.setText("Bem-Vindo, ");
-        jPanel1.add(jLabelTela_PrincipalRecepcionista);
-        jLabelTela_PrincipalRecepcionista.setBounds(10, 10, 116, 29);
-
-        jPanelTelaPrincipalRecepcionista.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanelTelaPrincipalRecepcionista.setLayout(null);
-
-        jButtonAgendarConsulta_TelaRecepcionista.setText("Agendar Consulta");
-        jButtonAgendarConsulta_TelaRecepcionista.addActionListener(new java.awt.event.ActionListener() {
+        jButtonAgendarConsulta_PrincipalRecepcionista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/AgendarConsulta.png"))); // NOI18N
+        jButtonAgendarConsulta_PrincipalRecepcionista.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonAgendarConsulta_TelaRecepcionistaActionPerformed(evt);
+                jButtonAgendarConsulta_PrincipalRecepcionistaActionPerformed(evt);
             }
         });
-        jPanelTelaPrincipalRecepcionista.add(jButtonAgendarConsulta_TelaRecepcionista);
-        jButtonAgendarConsulta_TelaRecepcionista.setBounds(280, 150, 170, 40);
+        jPanelPrincipalRecepcionista.add(jButtonAgendarConsulta_PrincipalRecepcionista);
+        jButtonAgendarConsulta_PrincipalRecepcionista.setBounds(200, 30, 77, 70);
 
-        jButtonEmitirRelatorio_TelaRecepcionista.setText("Emitir Relatório");
-        jPanelTelaPrincipalRecepcionista.add(jButtonEmitirRelatorio_TelaRecepcionista);
-        jButtonEmitirRelatorio_TelaRecepcionista.setBounds(280, 240, 170, 40);
+        jButtonEmitirRelatorio_PrincipalRecepcionista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/EmitirRelatorio.png"))); // NOI18N
+        jPanelPrincipalRecepcionista.add(jButtonEmitirRelatorio_PrincipalRecepcionista);
+        jButtonEmitirRelatorio_PrincipalRecepcionista.setBounds(160, 110, 73, 70);
 
-        jButtonCadPaciente_TelaRecepcionista.setText("Cadastrar Paciente");
-        jPanelTelaPrincipalRecepcionista.add(jButtonCadPaciente_TelaRecepcionista);
-        jButtonCadPaciente_TelaRecepcionista.setBounds(280, 60, 170, 40);
-
-        jButtonSairTelaPrincipalRecepcionista.setText("Sair");
-        jButtonSairTelaPrincipalRecepcionista.addActionListener(new java.awt.event.ActionListener() {
+        jButtonCadastroPaciente_PrincipalRecepcionista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/CadPaciente.png"))); // NOI18N
+        jButtonCadastroPaciente_PrincipalRecepcionista.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonSairTelaPrincipalRecepcionistaActionPerformed(evt);
+                jButtonCadastroPaciente_PrincipalRecepcionistaActionPerformed(evt);
             }
         });
-        jPanelTelaPrincipalRecepcionista.add(jButtonSairTelaPrincipalRecepcionista);
-        jButtonSairTelaPrincipalRecepcionista.setBounds(650, 310, 51, 23);
+        jPanelPrincipalRecepcionista.add(jButtonCadastroPaciente_PrincipalRecepcionista);
+        jButtonCadastroPaciente_PrincipalRecepcionista.setBounds(110, 30, 70, 70);
 
-        jLabelLogoGabiru_TelaPrincipalRecepcionista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/RAT7.png"))); // NOI18N
-        jPanelTelaPrincipalRecepcionista.add(jLabelLogoGabiru_TelaPrincipalRecepcionista);
-        jLabelLogoGabiru_TelaPrincipalRecepcionista.setBounds(10, 310, 30, 30);
+        jButtonSair_PrincipalRecepcionista.setText("Sair");
+        jPanelPrincipalRecepcionista.add(jButtonSair_PrincipalRecepcionista);
+        jButtonSair_PrincipalRecepcionista.setBounds(300, 210, 70, 30);
 
-        jPanel1.add(jPanelTelaPrincipalRecepcionista);
-        jPanelTelaPrincipalRecepcionista.setBounds(10, 40, 720, 350);
+        jButtonAlterarSenha_PrincipalRecepcionista.setText("Alterar Senha");
+        jPanelPrincipalRecepcionista.add(jButtonAlterarSenha_PrincipalRecepcionista);
+        jButtonAlterarSenha_PrincipalRecepcionista.setBounds(180, 210, 110, 30);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/2e8dd494ade012aa9bcb62519744b4a9.jpg"))); // NOI18N
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 740, 400);
+        getContentPane().add(jPanelPrincipalRecepcionista);
+        jPanelPrincipalRecepcionista.setBounds(10, 40, 380, 250);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(51, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
+        jLabelBemVindo_PrincipalRecepcionista.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabelBemVindo_PrincipalRecepcionista.setText("Bem-Vindo, ");
+        getContentPane().add(jLabelBemVindo_PrincipalRecepcionista);
+        jLabelBemVindo_PrincipalRecepcionista.setBounds(20, 0, 150, 40);
 
-        pack();
+        jLabelGabiruLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/RAT7.png"))); // NOI18N
+        jLabelGabiruLogo.setToolTipText("Gabiru");
+        getContentPane().add(jLabelGabiruLogo);
+        jLabelGabiruLogo.setBounds(360, 0, 30, 40);
+
+        jLabelFundoAzul.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/2e8dd494ade012aa9bcb62519744b4a9.jpg"))); // NOI18N
+        getContentPane().add(jLabelFundoAzul);
+        jLabelFundoAzul.setBounds(0, 0, 400, 300);
+
+        setSize(new java.awt.Dimension(416, 339));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButtonAgendarConsulta_TelaRecepcionistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAgendarConsulta_TelaRecepcionistaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonAgendarConsulta_TelaRecepcionistaActionPerformed
+    private void jButtonCadastroPaciente_PrincipalRecepcionistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCadastroPaciente_PrincipalRecepcionistaActionPerformed
+       
+    }//GEN-LAST:event_jButtonCadastroPaciente_PrincipalRecepcionistaActionPerformed
 
-    private void jButtonSairTelaPrincipalRecepcionistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSairTelaPrincipalRecepcionistaActionPerformed
-       Login.main(null);
+    private void jButtonAgendarConsulta_PrincipalRecepcionistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAgendarConsulta_PrincipalRecepcionistaActionPerformed
+        AgendarConsulta_recepcionista agend = new AgendarConsulta_recepcionista();
+        agend.setVisible(true);
         dispose();
-    }//GEN-LAST:event_jButtonSairTelaPrincipalRecepcionistaActionPerformed
+    }//GEN-LAST:event_jButtonAgendarConsulta_PrincipalRecepcionistaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -143,7 +129,6 @@ public class PrincipalRecepcionista extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(PrincipalRecepcionista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -154,14 +139,14 @@ public class PrincipalRecepcionista extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButtonAgendarConsulta_TelaRecepcionista;
-    private javax.swing.JButton jButtonCadPaciente_TelaRecepcionista;
-    private javax.swing.JButton jButtonEmitirRelatorio_TelaRecepcionista;
-    private javax.swing.JButton jButtonSairTelaPrincipalRecepcionista;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabelLogoGabiru_TelaPrincipalRecepcionista;
-    private javax.swing.JLabel jLabelTela_PrincipalRecepcionista;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanelTelaPrincipalRecepcionista;
+    private javax.swing.JButton jButtonAgendarConsulta_PrincipalRecepcionista;
+    private javax.swing.JButton jButtonAlterarSenha_PrincipalRecepcionista;
+    private javax.swing.JButton jButtonCadastroPaciente_PrincipalRecepcionista;
+    private javax.swing.JButton jButtonEmitirRelatorio_PrincipalRecepcionista;
+    private javax.swing.JButton jButtonSair_PrincipalRecepcionista;
+    private javax.swing.JLabel jLabelBemVindo_PrincipalRecepcionista;
+    private javax.swing.JLabel jLabelFundoAzul;
+    private javax.swing.JLabel jLabelGabiruLogo;
+    private javax.swing.JPanel jPanelPrincipalRecepcionista;
     // End of variables declaration//GEN-END:variables
 }

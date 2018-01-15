@@ -93,6 +93,12 @@ public class PrincipalAdm extends javax.swing.JFrame {
 
         jButtonPacienteDoBemVindo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/usuario.png"))); // NOI18N
         jButtonPacienteDoBemVindo.setToolTipText("Cadastro de Pacientes");
+        jButtonPacienteDoBemVindo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonPacienteDoBemVindo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonPacienteDoBemVindoActionPerformed(evt);
+            }
+        });
         jPanelDoInternalFrame.add(jButtonPacienteDoBemVindo);
         jButtonPacienteDoBemVindo.setBounds(260, 60, 90, 80);
 
@@ -228,6 +234,10 @@ public class PrincipalAdm extends javax.swing.JFrame {
        form_pac.setVisible(true);
        dispose();
     }//GEN-LAST:event_jMenuItemCadPacientesActionPerformed
+
+    private void jButtonPacienteDoBemVindoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPacienteDoBemVindoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonPacienteDoBemVindoActionPerformed
 
     /**
      * @param args the command line arguments
