@@ -224,7 +224,7 @@ public class FormularioEnfermeiro extends javax.swing.JFrame {
             
             
         dispose();
-        TelaPrincipal.main(null);
+        PrincipalAdm.main(null);
         } else {
             JOptionPane.showMessageDialog(rootPane, "Preencha todos os campos");
         }

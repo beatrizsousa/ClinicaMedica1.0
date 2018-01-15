@@ -248,7 +248,7 @@ public class FormularioMedico extends javax.swing.JFrame {
         //FormularioMedico form_med = new FormularioMedico();
         //form_med.setVisible(true);
         dispose();
-        TelaPrincipal.main(null);
+        PrincipalAdm.main(null);
         } else {
             JOptionPane.showMessageDialog(rootPane, "Preencha todos os campos");
         }
@@ -257,7 +257,7 @@ public class FormularioMedico extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonSalvar_CadMedicoActionPerformed
 
     private void jButtonCancelar_CadMedicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelar_CadMedicoActionPerformed
-        TelaPrincipal.main(null);
+        PrincipalAdm.main(null);
         dispose();
     }//GEN-LAST:event_jButtonCancelar_CadMedicoActionPerformed
 

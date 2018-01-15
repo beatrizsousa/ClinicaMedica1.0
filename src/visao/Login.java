@@ -11,12 +11,12 @@ import javax.swing.JOptionPane;
  *
  * @author Anderson
  */
-public class TelaLogin extends javax.swing.JFrame {
+public class Login extends javax.swing.JFrame {
 
     /**
      * Creates new form TelaLogin
      */
-    public TelaLogin() {
+    public Login() {
         initComponents();
     }
 
@@ -100,10 +100,10 @@ public class TelaLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonSairActionPerformed
 
     private void jButtonLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLoginActionPerformed
-        TelaPrincipal tela = new TelaPrincipal();
+        PrincipalAdm tela = new PrincipalAdm();
         if(jTextFieldUsuario.getText().equalsIgnoreCase("admin") && jTextFieldSenha.getText().equalsIgnoreCase("1234")){
-         //setando a classe TelaPrincipal para cá
-        tela.setVisible(true); // Mostra o conteudo de TelaPrincipal, caso seja verdadeiro
+         //setando a classe PrincipalAdm para cá
+        tela.setVisible(true); // Mostra o conteudo de PrincipalAdm, caso seja verdadeiro
         dispose(); // fecha a tela assim que a outra abre
         } else{
            JOptionPane.showMessageDialog(rootPane, "Usuário ou Senha inválido");
@@ -133,20 +133,21 @@ public class TelaLogin extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TelaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TelaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TelaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TelaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TelaLogin().setVisible(true);
+                new Login().setVisible(true);
             }
         });
     }

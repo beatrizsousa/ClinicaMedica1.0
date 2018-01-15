@@ -9,12 +9,12 @@ package visao;
  *
  * @author dell
  */
-public class TelaGerarCobrança extends javax.swing.JFrame {
+public class GerarCobranca_recepcionista extends javax.swing.JFrame {
 
     /**
      * Creates new form TelaGerarCobrança
      */
-    public TelaGerarCobrança() {
+    public GerarCobranca_recepcionista() {
         initComponents();
     }
 
@@ -181,20 +181,21 @@ public class TelaGerarCobrança extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TelaGerarCobrança.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GerarCobranca_recepcionista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TelaGerarCobrança.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GerarCobranca_recepcionista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TelaGerarCobrança.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GerarCobranca_recepcionista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TelaGerarCobrança.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GerarCobranca_recepcionista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TelaGerarCobrança().setVisible(true);
+                new GerarCobranca_recepcionista().setVisible(true);
             }
         });
     }

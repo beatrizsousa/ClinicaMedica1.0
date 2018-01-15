@@ -9,12 +9,12 @@ package visao;
  *
  * @author dell
  */
-public class TelaPrincipalRecepcionista extends javax.swing.JFrame {
+public class PrincipalRecepcionista extends javax.swing.JFrame {
 
     /**
      * Creates new form TelaPrincipalRecepcionista
      */
-    public TelaPrincipalRecepcionista() {
+    public PrincipalRecepcionista() {
         initComponents();
     }
 
@@ -113,7 +113,7 @@ public class TelaPrincipalRecepcionista extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonAgendarConsulta_TelaRecepcionistaActionPerformed
 
     private void jButtonSairTelaPrincipalRecepcionistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSairTelaPrincipalRecepcionistaActionPerformed
-       TelaLogin.main(null);
+       Login.main(null);
         dispose();
     }//GEN-LAST:event_jButtonSairTelaPrincipalRecepcionistaActionPerformed
 
@@ -134,20 +134,21 @@ public class TelaPrincipalRecepcionista extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipalRecepcionista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PrincipalRecepcionista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipalRecepcionista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PrincipalRecepcionista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipalRecepcionista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PrincipalRecepcionista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipalRecepcionista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PrincipalRecepcionista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TelaPrincipalRecepcionista().setVisible(true);
+                new PrincipalRecepcionista().setVisible(true);
             }
         });
     }

@@ -19,12 +19,12 @@ import modelo.Paciente;
  *
  * @author Anderson
  */
-public class TelaExame extends javax.swing.JFrame {
+public class SolicitarExame_medico extends javax.swing.JFrame {
 
     /**
      * Creates new form TelaExame
      */
-    public TelaExame() {
+    public SolicitarExame_medico() {
         initComponents();
     }
 
@@ -87,6 +87,10 @@ public class TelaExame extends javax.swing.JFrame {
         jTextFieldNomeMedico_SolicitarExame.setBounds(20, 40, 680, 30);
         jPanel1.add(jTextFieldNomePaciente_SolicitarExame);
         jTextFieldNomePaciente_SolicitarExame.setBounds(20, 90, 680, 30);
+
+        jTextFieldExames_SolicitarExame.setToolTipText("");
+        jTextFieldExames_SolicitarExame.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        jTextFieldExames_SolicitarExame.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jPanel1.add(jTextFieldExames_SolicitarExame);
         jTextFieldExames_SolicitarExame.setBounds(20, 150, 680, 180);
 
@@ -121,19 +125,19 @@ public class TelaExame extends javax.swing.JFrame {
             try {
                 daoExame.adicionaExame(exame, paciente, medico);
             } catch (ClassNotFoundException ex) {
-                Logger.getLogger(TelaExame.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(SolicitarExame_medico.class.getName()).log(Level.SEVERE, null, ex);
             }
             
             
         dispose();
-        TelaPrincipal_Medico.main(null);
+        PrincipalMedico.main(null);
         } else {
             JOptionPane.showMessageDialog(rootPane, "Preencha todos os campos");
         }
     }//GEN-LAST:event_jButtonSalvar_SolicitarExameActionPerformed
 
     private void jButtonCancelar_SolicitarExameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelar_SolicitarExameActionPerformed
-        TelaPrincipal_Medico.main(null);
+        PrincipalMedico.main(null);
         dispose();
     }//GEN-LAST:event_jButtonCancelar_SolicitarExameActionPerformed
 
@@ -154,20 +158,23 @@ public class TelaExame extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TelaExame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SolicitarExame_medico.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TelaExame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SolicitarExame_medico.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TelaExame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SolicitarExame_medico.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TelaExame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SolicitarExame_medico.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TelaExame().setVisible(true);
+                new SolicitarExame_medico().setVisible(true);
             }
         });
     }
