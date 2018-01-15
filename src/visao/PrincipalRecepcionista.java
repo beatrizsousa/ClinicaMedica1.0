@@ -65,10 +65,20 @@ public class PrincipalRecepcionista extends javax.swing.JFrame {
         jButtonCadastroPaciente_PrincipalRecepcionista.setBounds(110, 30, 70, 70);
 
         jButtonSair_PrincipalRecepcionista.setText("Sair");
+        jButtonSair_PrincipalRecepcionista.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSair_PrincipalRecepcionistaActionPerformed(evt);
+            }
+        });
         jPanelPrincipalRecepcionista.add(jButtonSair_PrincipalRecepcionista);
         jButtonSair_PrincipalRecepcionista.setBounds(300, 210, 70, 30);
 
         jButtonAlterarSenha_PrincipalRecepcionista.setText("Alterar Senha");
+        jButtonAlterarSenha_PrincipalRecepcionista.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonAlterarSenha_PrincipalRecepcionistaActionPerformed(evt);
+            }
+        });
         jPanelPrincipalRecepcionista.add(jButtonAlterarSenha_PrincipalRecepcionista);
         jButtonAlterarSenha_PrincipalRecepcionista.setBounds(180, 210, 110, 30);
 
@@ -102,6 +112,18 @@ public class PrincipalRecepcionista extends javax.swing.JFrame {
         agend.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButtonAgendarConsulta_PrincipalRecepcionistaActionPerformed
+
+    private void jButtonAlterarSenha_PrincipalRecepcionistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAlterarSenha_PrincipalRecepcionistaActionPerformed
+      AlterarSenha_recepcionista altsenha = new AlterarSenha_recepcionista();
+       altsenha.setVisible(true);
+       dispose();
+    }//GEN-LAST:event_jButtonAlterarSenha_PrincipalRecepcionistaActionPerformed
+
+    private void jButtonSair_PrincipalRecepcionistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSair_PrincipalRecepcionistaActionPerformed
+       Login lo = new Login();
+       lo.setVisible(true);
+       dispose();
+    }//GEN-LAST:event_jButtonSair_PrincipalRecepcionistaActionPerformed
 
     /**
      * @param args the command line arguments

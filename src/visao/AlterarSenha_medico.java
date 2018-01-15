@@ -55,6 +55,12 @@ public class AlterarSenha_medico extends javax.swing.JFrame {
         jLabelSenhaAtual_AlterarSenha_medico.setText("Senha Atual:");
         getContentPane().add(jLabelSenhaAtual_AlterarSenha_medico);
         jLabelSenhaAtual_AlterarSenha_medico.setBounds(10, 40, 80, 30);
+
+        jTextFieldSenhaAtual_AlterarSenha_medico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldSenhaAtual_AlterarSenha_medicoActionPerformed(evt);
+            }
+        });
         getContentPane().add(jTextFieldSenhaAtual_AlterarSenha_medico);
         jTextFieldSenhaAtual_AlterarSenha_medico.setBounds(10, 70, 380, 30);
         getContentPane().add(jTextField1);
@@ -85,6 +91,10 @@ public class AlterarSenha_medico extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(416, 339));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextFieldSenhaAtual_AlterarSenha_medicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldSenhaAtual_AlterarSenha_medicoActionPerformed
+         
+    }//GEN-LAST:event_jTextFieldSenhaAtual_AlterarSenha_medicoActionPerformed
 
     /**
      * @param args the command line arguments
