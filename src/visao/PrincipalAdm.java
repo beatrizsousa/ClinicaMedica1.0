@@ -34,12 +34,12 @@ public class PrincipalAdm extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jButtonEnfermeiro_PrincipalAdm = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jButtonRecepcionista_PrincipalAdm = new javax.swing.JButton();
         jLabelGabiruLogo_PrincipalAdm = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jButtonAlterarSenha_PrincipalRecepcionista1 = new javax.swing.JButton();
         jButtonSair_PrincipalAdm = new javax.swing.JButton();
-        jLabelFundoPrincipalAdm = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
 
         jButtonAlterarSenha_PrincipalRecepcionista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/chave.png"))); // NOI18N
@@ -58,6 +58,11 @@ public class PrincipalAdm extends javax.swing.JFrame {
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/medico.png"))); // NOI18N
         jButton1.setToolTipText("Cadastro de Médicos");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton1);
         jButton1.setBounds(310, 80, 60, 60);
 
@@ -71,9 +76,15 @@ public class PrincipalAdm extends javax.swing.JFrame {
         jPanel1.add(jButtonEnfermeiro_PrincipalAdm);
         jButtonEnfermeiro_PrincipalAdm.setBounds(100, 80, 60, 60);
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/paciente.png"))); // NOI18N
-        jPanel1.add(jButton2);
-        jButton2.setBounds(530, 80, 60, 60);
+        jButtonRecepcionista_PrincipalAdm.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/RECEP.png"))); // NOI18N
+        jButtonRecepcionista_PrincipalAdm.setToolTipText("Cadastrar Recepcionista");
+        jButtonRecepcionista_PrincipalAdm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonRecepcionista_PrincipalAdmActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButtonRecepcionista_PrincipalAdm);
+        jButtonRecepcionista_PrincipalAdm.setBounds(530, 80, 60, 60);
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(10, 110, 670, 220);
@@ -83,7 +94,7 @@ public class PrincipalAdm extends javax.swing.JFrame {
         getContentPane().add(jLabelGabiruLogo_PrincipalAdm);
         jLabelGabiruLogo_PrincipalAdm.setBounds(650, 0, 30, 40);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 24)); // NOI18N
         jLabel1.setText("ADM");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(10, 10, 60, 20);
@@ -99,12 +110,17 @@ public class PrincipalAdm extends javax.swing.JFrame {
         jButtonAlterarSenha_PrincipalRecepcionista1.setBounds(20, 370, 40, 40);
 
         jButtonSair_PrincipalAdm.setText("Sair");
+        jButtonSair_PrincipalAdm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSair_PrincipalAdmActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButtonSair_PrincipalAdm);
         jButtonSair_PrincipalAdm.setBounds(610, 380, 70, 30);
 
-        jLabelFundoPrincipalAdm.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/agora.png"))); // NOI18N
-        getContentPane().add(jLabelFundoPrincipalAdm);
-        jLabelFundoPrincipalAdm.setBounds(0, 0, 690, 420);
+        jPanel2.setBackground(new java.awt.Color(0, 204, 204));
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(0, 0, 690, 420);
         setJMenuBar(jMenuBar1);
 
         setSize(new java.awt.Dimension(708, 459));
@@ -126,6 +142,23 @@ public class PrincipalAdm extends javax.swing.JFrame {
        formenf.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButtonEnfermeiro_PrincipalAdmActionPerformed
+
+    private void jButtonSair_PrincipalAdmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSair_PrincipalAdmActionPerformed
+       dispose();
+        Login_SaudeSystem.main(null);
+       
+    }//GEN-LAST:event_jButtonSair_PrincipalAdmActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+       FormularioMedico med = new FormularioMedico();
+       med.setVisible(true);
+        dispose(); 
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButtonRecepcionista_PrincipalAdmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRecepcionista_PrincipalAdmActionPerformed
+        FormularioRecepcionista formrecep = new FormularioRecepcionista();
+        formrecep.setVisible(true);
+    }//GEN-LAST:event_jButtonRecepcionista_PrincipalAdmActionPerformed
 
     /**
      * @param args the command line arguments
@@ -165,15 +198,15 @@ public class PrincipalAdm extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButtonAlterarSenha_PrincipalRecepcionista;
     private javax.swing.JButton jButtonAlterarSenha_PrincipalRecepcionista1;
     private javax.swing.JButton jButtonEnfermeiro_PrincipalAdm;
+    private javax.swing.JButton jButtonRecepcionista_PrincipalAdm;
     private javax.swing.JButton jButtonSair_PrincipalAdm;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabelFundoPrincipalAdm;
     private javax.swing.JLabel jLabelGabiruLogo_PrincipalAdm;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }

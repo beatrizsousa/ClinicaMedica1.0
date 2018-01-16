@@ -81,6 +81,11 @@ public class AlterarSenha_medico extends javax.swing.JFrame {
         jButtonSalvar_AlterarSenha_medico.setBounds(130, 260, 80, 30);
 
         jButtonCancelar_AlterarSenha_medico.setText("Cancelar");
+        jButtonCancelar_AlterarSenha_medico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCancelar_AlterarSenha_medicoActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButtonCancelar_AlterarSenha_medico);
         jButtonCancelar_AlterarSenha_medico.setBounds(310, 260, 80, 30);
 
@@ -95,6 +100,10 @@ public class AlterarSenha_medico extends javax.swing.JFrame {
     private void jTextFieldSenhaAtual_AlterarSenha_medicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldSenhaAtual_AlterarSenha_medicoActionPerformed
          
     }//GEN-LAST:event_jTextFieldSenhaAtual_AlterarSenha_medicoActionPerformed
+
+    private void jButtonCancelar_AlterarSenha_medicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelar_AlterarSenha_medicoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonCancelar_AlterarSenha_medicoActionPerformed
 
     /**
      * @param args the command line arguments

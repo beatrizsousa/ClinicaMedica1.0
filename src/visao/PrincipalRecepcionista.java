@@ -131,7 +131,7 @@ public class PrincipalRecepcionista extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonAlterarSenha_PrincipalRecepcionistaActionPerformed
 
     private void jButtonSair_PrincipalRecepcionistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSair_PrincipalRecepcionistaActionPerformed
-       Login lo = new Login();
+       Login_SaudeSystem lo = new Login_SaudeSystem();
        lo.setVisible(true);
        dispose();
     }//GEN-LAST:event_jButtonSair_PrincipalRecepcionistaActionPerformed

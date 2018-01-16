@@ -11,12 +11,12 @@ import javax.swing.JOptionPane;
  *
  * @author Anderson
  */
-public class Login extends javax.swing.JFrame {
+public class Login_SaudeSystem extends javax.swing.JFrame {
 
     /**
      * Creates new form TelaLogin
      */
-    public Login() {
+    public Login_SaudeSystem() {
         initComponents();
     }
 
@@ -36,8 +36,8 @@ public class Login extends javax.swing.JFrame {
         jTextFieldSenha = new javax.swing.JPasswordField();
         jLabelUsuario = new javax.swing.JLabel();
         jLabelLogoSaudeSystem = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabelFundoLogin = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -82,14 +82,13 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(jLabelLogoSaudeSystem);
         jLabelLogoSaudeSystem.setBounds(20, 100, 250, 100);
 
+        jPanel1.setBackground(new java.awt.Color(0, 204, 204));
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, 0, 530, 300);
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/RAT7.png"))); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(10, 264, 60, 30);
-
-        jLabelFundoLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fundo.png"))); // NOI18N
-        jLabelFundoLogin.setText("jLabelFundoLogin");
-        getContentPane().add(jLabelFundoLogin);
-        jLabelFundoLogin.setBounds(-40, 0, 570, 300);
 
         setSize(new java.awt.Dimension(548, 339));
         setLocationRelativeTo(null);
@@ -133,21 +132,23 @@ public class Login extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Login_SaudeSystem.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Login_SaudeSystem.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Login_SaudeSystem.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Login_SaudeSystem.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Login().setVisible(true);
+                new Login_SaudeSystem().setVisible(true);
             }
         });
     }
@@ -156,10 +157,10 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JButton jButtonLogin;
     private javax.swing.JButton jButtonSair;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabelFundoLogin;
     private javax.swing.JLabel jLabelLogoSaudeSystem;
     private javax.swing.JLabel jLabelSenha;
     private javax.swing.JLabel jLabelUsuario;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField jTextFieldSenha;
     private javax.swing.JTextField jTextFieldUsuario;
     // End of variables declaration//GEN-END:variables

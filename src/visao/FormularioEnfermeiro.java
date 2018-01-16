@@ -60,6 +60,7 @@ public class FormularioEnfermeiro extends javax.swing.JFrame {
         jTextFieldCOREN_CadEnfermeiro = new javax.swing.JTextField();
         jButtonSalvar_CadEnfermeiro = new javax.swing.JButton();
         jButtonCancelar_CadEnfermeiro = new javax.swing.JButton();
+        jButtonLimpar_FormularioEnfermeiro = new javax.swing.JButton();
         jLabelCadastroDeEnfermeiros = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -158,7 +159,7 @@ public class FormularioEnfermeiro extends javax.swing.JFrame {
             }
         });
         CadastroDeEnfermeiros.add(jButtonSalvar_CadEnfermeiro);
-        jButtonSalvar_CadEnfermeiro.setBounds(473, 393, 110, 30);
+        jButtonSalvar_CadEnfermeiro.setBounds(320, 390, 110, 30);
 
         jButtonCancelar_CadEnfermeiro.setText("Cancelar");
         jButtonCancelar_CadEnfermeiro.addActionListener(new java.awt.event.ActionListener() {
@@ -167,7 +168,16 @@ public class FormularioEnfermeiro extends javax.swing.JFrame {
             }
         });
         CadastroDeEnfermeiros.add(jButtonCancelar_CadEnfermeiro);
-        jButtonCancelar_CadEnfermeiro.setBounds(593, 393, 110, 30);
+        jButtonCancelar_CadEnfermeiro.setBounds(590, 390, 110, 30);
+
+        jButtonLimpar_FormularioEnfermeiro.setText("Limpar");
+        jButtonLimpar_FormularioEnfermeiro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonLimpar_FormularioEnfermeiroActionPerformed(evt);
+            }
+        });
+        CadastroDeEnfermeiros.add(jButtonLimpar_FormularioEnfermeiro);
+        jButtonLimpar_FormularioEnfermeiro.setBounds(450, 390, 110, 30);
 
         getContentPane().add(CadastroDeEnfermeiros);
         CadastroDeEnfermeiros.setBounds(10, 37, 733, 439);
@@ -175,7 +185,7 @@ public class FormularioEnfermeiro extends javax.swing.JFrame {
         jLabelCadastroDeEnfermeiros.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabelCadastroDeEnfermeiros.setText("Cadastro de Enfermeiros");
         getContentPane().add(jLabelCadastroDeEnfermeiros);
-        jLabelCadastroDeEnfermeiros.setBounds(306, 9, 150, 17);
+        jLabelCadastroDeEnfermeiros.setBounds(10, 0, 150, 40);
 
         setSize(new java.awt.Dimension(769, 526));
         setLocationRelativeTo(null);
@@ -231,8 +241,23 @@ public class FormularioEnfermeiro extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonSalvar_CadEnfermeiroActionPerformed
 
     private void jButtonCancelar_CadEnfermeiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelar_CadEnfermeiroActionPerformed
-        // TODO add your handling code here:
+       PrincipalAdm.main(null);
+       dispose();
     }//GEN-LAST:event_jButtonCancelar_CadEnfermeiroActionPerformed
+
+    private void jButtonLimpar_FormularioEnfermeiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLimpar_FormularioEnfermeiroActionPerformed
+        jTextFieldBairro_CadEnfermeiro.setText("");
+        jTextFieldCEP_CadEnfermeiro.setText("");
+        jTextFieldCOREN_CadEnfermeiro.setText("");
+        jTextFieldCPF_CadEnfermeiro.setText("");
+        jTextFieldCidade_CadEnfermeiro.setText("");
+        jTextFieldEndereco_CadEnfermeiro.setText("");
+        jTextFieldNascimento_CadEnfermeiro.setText("");
+        jTextFieldNome_CadEnfermeiro.setText("");
+        jTextFieldNumero_CadEnfermeiro.setText("");
+        jTextFieldNumero_CadEnfermeiro.setText("");
+        jTextFieldTelefone_CadEnfermeiro.setText("");
+    }//GEN-LAST:event_jButtonLimpar_FormularioEnfermeiroActionPerformed
 
     /**
      * @param args the command line arguments
@@ -272,6 +297,7 @@ public class FormularioEnfermeiro extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel CadastroDeEnfermeiros;
     private javax.swing.JButton jButtonCancelar_CadEnfermeiro;
+    private javax.swing.JButton jButtonLimpar_FormularioEnfermeiro;
     private javax.swing.JButton jButtonSalvar_CadEnfermeiro;
     private javax.swing.JComboBox<String> jComboBoxEstado_CadEnfermeiro;
     private javax.swing.JComboBox<String> jComboBoxSexo_CadEnfermeiro;
